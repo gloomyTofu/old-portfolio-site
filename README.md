@@ -2,7 +2,7 @@
 
 Personal Site
 
-## Sections (coming soon)
+### sections (coming soon)
 
   * Portfolio
   * About
