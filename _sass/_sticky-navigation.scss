@@ -1,0 +1,143 @@
+$nav-bar-height: rem(50);
+$logo-width: 1.175rem;
+$timing-duration: 0.3s;
+$timing-function: ease;
+$cp-border:2px solid $grey-color-dark;
+
+.sticky-navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	//height: $nav-bar-height;
+	background-color: transparentize($background-color, 0.4);
+	border-bottom: 2px solid transparentize($grey-color-dark, 0.05);
+	z-index: 1000;
+	//overflow: hidden;
+	@include transition(all $timing-duration/2 $timing-function);
+}
+.sticky-navigation-mobile-menu{}
+
+.sticky-navigation-menu {
+	@include transition(all 0.5s $timing-function);
+	@include media($mobile){
+		display: none;
+	}
+}
+.open {
+	@include media($mobile){
+		height:100%;
+		background-color: $primary-color;
+		.sticky-navigation-menu {
+			display:block;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			text-align: center;
+		}
+	}
+}
+
+ul.sticky-navigation-menu li {
+	display: inline;
+	padding-left: 5%;
+}
+
+a.cp-logo {
+	width: $nav-bar-height + $logo-width;// 1.175rem;
+	height: auto;
+	padding: 0.5rem 1rem;
+	display: block;
+	outline: none;
+	background-color: $grey-color-dark;
+	@include transition(background-color 0.5s $timing-function);
+	overflow: hidden;
+	cursor: pointer;
+	&:hover, &:focus {
+		background-color: $primary-color;
+	}
+}
+
+/* MENU ICON + ANIMATION
+   ========================================================================== */
+
+$menu-height: rem(3);
+
+// http://callmenick.com/post/animating-css-only-hamburger-menu-icons
+
+.menu-icon {
+	@include media($mobile){
+		display:block;
+		position: relative;
+		width: rem(60);
+		height: rem(45);
+		/*Image Replacement*/
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		@include transition(background 0.3s);
+		&:hover, &:focus {outline:none; }
+		span {
+			display: block;
+			position: absolute;
+			height: rem(9);
+			border-radius: rem(9);
+			top: rem(25);
+			left: rem(15);
+			right: rem(15);
+			height: $menu-height;
+			background: $grey-color-dark;
+		}
+	}
+	display:none; 
+}
+
+.menu-icon span:before,
+.menu-icon span:after {
+	position: absolute;
+	display: block;
+	width: 100%;
+	left: 0;
+	height: $menu-height;
+	background: $grey-color-dark;
+	content: "";
+}
+
+.menu-icon span:before { top: rem(-11); }
+.menu-icon span:after { bottom: rem(-11); }
+
+.menu-toggle span {
+	@include transition(background 0.3s);
+}
+
+.menu-toggle span:before, .menu-toggle span:after {
+	@include transition-duration(0.3s, 0.3s);
+	@include transition-delay(0.3s, 0);
+}
+
+.menu-toggle span:before {
+	@include transition-property(top, transform);
+}
+
+.menu-toggle span:after {
+	@include transition-property(bottom, transform);
+}
+
+.menu-toggle.active span {
+	background: none;
+}
+
+.menu-toggle.active span:before {
+	top:0;
+	@include transform(rotate(45deg));
+}
+
+.menu-toggle.active span:after {
+	bottom:0;
+	@include transform(rotate(-45deg));
+}
+
+.menu-toggle.active span:before, .menu-toggle.active span:after {
+	@include transition-delay(0, 0.3s);
+}

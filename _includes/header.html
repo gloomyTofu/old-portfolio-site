@@ -1,0 +1,27 @@
+<nav class="sticky-navigation">
+	<div class="wrapper clearfix">
+		<section class="left">
+			<a class="cp-logo" href="{{ site.baseurl }}/">
+				<!--{{ site.title }}-->
+				{% include logo-svg.html %}
+			</a>
+		</section>
+		<section class="right">
+			<a href="#" id="js-navigation-mobile-menu" class="sticky-navigation-mobile-menu icon menu-icon menu-toggle">
+				<!--<svg viewBox="0 0 30 30">
+					<use xlink:href="assets/images/icon.svg#menu"></use>
+				</svg>-->
+				<span>
+					menu
+				</span>
+			</a>
+			<ul id="js-navigation-menu" class="sticky-navigation-menu">
+				{% for page in site.pages %}
+					{% if page.title %}
+					<li class="nav-link"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</section>
+	</div>
+</nav>
