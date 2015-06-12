@@ -5,4 +5,5 @@ $tablet-width: rem(768);
 
 $mobile: new-breakpoint(max-width $mobile-width 4);
 $tablet: new-breakpoint(min-width $mobile-width max-width $tablet-width 8);
+$tablet-plus: new-breakpoint(min-width $mobile-width);
 $desktop: new-breakpoint(min-width $tablet-width);

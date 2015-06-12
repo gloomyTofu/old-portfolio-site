@@ -10,6 +10,8 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+$stylized-font-family:'Corben', serif; 
+
 $spacing-unit:     30px;
 
 $background-color: hsl(0, 0%, 100%);  // White
@@ -19,4 +21,4 @@ $grey-color:       hsl(31,0,60%);
 $grey-color-light: lighten($grey-color, 30%);
 $grey-color-dark:  darken($grey-color, 40%);
 
-$text-color:       $grey-color;
+$text-color:       $grey-color-dark;
