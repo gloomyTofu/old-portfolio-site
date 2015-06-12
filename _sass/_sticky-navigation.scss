@@ -1,0 +1,92 @@
+$nav-bar-height: rem(50);
+$logo-width: 1.175rem;
+$timing-duration: 0.3s;
+$timing-function: ease-in-out;
+$cp-border:2px solid $grey-color-dark;
+
+.sticky-navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: $nav-bar-height;
+	background-color: transparentize($background-color, 0.4);
+	border-bottom: 2px solid transparentize($grey-color-dark, 0.05);
+	z-index: 1000;
+	//overflow: hidden;
+	@include transition(all $timing-duration/2 $timing-function);
+}
+
+// LOGO -> SECTION = LEFT
+a.cp-logo {
+	width: $nav-bar-height + $logo-width;// 1.175rem;
+	height: auto;
+	padding: 0.5rem 1rem;
+	display: block;
+	outline: none;
+	background-color: $grey-color-dark;
+	@include transition(background-color 0.5s $timing-function);
+	overflow: hidden;
+	cursor: pointer;
+	&:hover, &:focus {
+		background-color: $primary-color;
+	}
+}
+
+// MOBILE MENU -> SECTION = RIGHT
+.sticky-navigation-mobile-menu{}
+
+.sticky-navigation-menu {
+	display:inline;
+	display:inline-flex;
+	font-size: 1rem;
+	line-height: 1.25;
+	font-weight:300;
+	list-style-type:none;
+	font-family: $stylized-font-family;
+	@include transition(all 0.5s $timing-function);
+	li { margin-right: 5%; }
+	
+	@include media($mobile){
+		display: none;
+		font-size:rem(50);
+		line-height:1.75;
+	}
+}
+.open {
+	@include media($mobile){
+		height:100%;
+		background-color: $primary-color;
+		.sticky-navigation-menu {
+			display:block;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			text-align: center;
+		}
+	}
+}
+
+ul.sticky-navigation-menu a {
+	text-decoration:none; 
+	@include transition(border-bottom 0.3s $timing-function);
+	
+	@include media($mobile){
+		color:#fff;
+	}
+	@include media($tablet-plus){
+		color:$grey-color-dark;
+	}
+}
+
+ul.sticky-navigation-menu a {
+	&:hover, &:focus {
+		@include media($mobile){
+			border-bottom: 3px solid #fff;
+		}
+		@include media($tablet-plus){
+			border-bottom: 3px solid $primary-color;
+		}
+	}
+}
