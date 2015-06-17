@@ -2,7 +2,6 @@ $nav-bar-height: rem(50);
 $logo-width: 1.175rem;
 $timing-duration: 0.3s;
 $timing-function: ease-in-out;
-$cp-border:2px solid $grey-color-dark;
 
 .sticky-navigation {
 	position: fixed;
@@ -19,9 +18,9 @@ $cp-border:2px solid $grey-color-dark;
 
 // LOGO -> SECTION = LEFT
 a.cp-logo {
+	position:absolute;
 	width: $nav-bar-height + $logo-width;// 1.175rem;
 	height: auto;
-	padding: 0.5rem 1rem;
 	display: block;
 	outline: none;
 	background-color: $grey-color-dark;
@@ -31,30 +30,46 @@ a.cp-logo {
 	&:hover, &:focus {
 		background-color: $primary-color;
 	}
+	@include media($mobile-tablet){
+		left:0;
+		padding: 0.5rem 1rem;
+	}
+	@include media($desktop){
+		min-width: $nav-bar-height + $logo-width*2;// 1.175rem;
+		width: 15%;
+		max-width: 100px;
+		padding: 0.75rem 1.25rem;
+	}
 }
 
 // MOBILE MENU -> SECTION = RIGHT
-.sticky-navigation-mobile-menu{}
+.sticky-navigation-mobile-menu{
+
+}
 
 .sticky-navigation-menu {
 	display:inline;
 	display:inline-flex;
-	font-size: 1rem;
-	line-height: 1.25;
+	font-size: 1.25rem;
+	line-height: 1.5;
 	font-weight:300;
 	list-style-type:none;
 	font-family: $stylized-font-family;
 	@include transition(all 0.5s $timing-function);
-	li { margin-right: 5%; }
 	
-	@include media($mobile){
+	@include media($mobile-tablet){
 		display: none;
 		font-size:rem(50);
 		line-height:1.75;
+		margin:0;
+		padding:0;
+	}
+	@include media($desktop){
+		margin:0.75rem 0;
 	}
 }
 .open {
-	@include media($mobile){
+	@include media($mobile-tablet){
 		height:100%;
 		background-color: $primary-color;
 		.sticky-navigation-menu {
@@ -68,24 +83,34 @@ a.cp-logo {
 	}
 }
 
+ul.sticky-navigation-menu li {
+	padding-right: rem(20);
+		&:last-child {
+			padding-right:0;
+		}
+	@include media($mobile-tablet){
+		padding-right:0;
+	}
+}
+
 ul.sticky-navigation-menu a {
 	text-decoration:none; 
 	@include transition(border-bottom 0.3s $timing-function);
 	
-	@include media($mobile){
+	@include media($mobile-tablet){
 		color:#fff;
 	}
-	@include media($tablet-plus){
+	@include media($desktop){
 		color:$grey-color-dark;
 	}
 }
 
 ul.sticky-navigation-menu a {
 	&:hover, &:focus {
-		@include media($mobile){
+		@include media($mobile-tablet){
 			border-bottom: 3px solid #fff;
 		}
-		@include media($tablet-plus){
+		@include media($desktop){
 			border-bottom: 3px solid $primary-color;
 		}
 	}

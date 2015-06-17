@@ -6,10 +6,10 @@ $menu-height: rem(3);
 // http://callmenick.com/post/animating-css-only-hamburger-menu-icons
 
 .menu-icon {
-	@include media($mobile){
+	@include media($mobile-tablet){
 		display:block;
 		position: relative;
-		width: rem(60);
+		width: rem(45);
 		height: rem(45);
 		/*Image Replacement*/
 		text-indent: 100%;
@@ -24,7 +24,7 @@ $menu-height: rem(3);
 			border-radius: rem(9);
 			top: rem(25);
 			left: rem(15);
-			right: rem(15);
+			right:0;
 			height: $menu-height;
 			background: $grey-color-dark;
 		}

@@ -1,11 +1,13 @@
 ---
-layout: page
+layout: section
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+##Cupcake ipsum
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Dolor sit amet tootsie roll dragée chupa chups. Pudding sweet roll danish. Candy cotton candy caramels jelly soufflé sweet roll bear claw danish brownie. Marzipan ice cream cookie candy.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Cake sweet roll powder dessert caramels. Topping dragée lollipop topping wafer sweet roll tiramisu. Chocolate cake liquorice dessert. Sweet cookie ice cream biscuit.
+
+Cake cookie apple pie jujubes cake sugar plum toffee. Gummies candy cake sweet roll chocolate cake toffee sweet roll. Cake caramels chupa chups lemon drops biscuit fruitcake. Cookie wafer jelly beans toffee gummi bears soufflé.

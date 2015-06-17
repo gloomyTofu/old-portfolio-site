@@ -94,6 +94,8 @@ textarea {
 /* ==========================================================================
    CP Custom Styles
    ========================================================================== */
+.center {text-align: center; }
+
 body {
 	font-size: $base-font-size;
 	line-height: $base-line-height;
@@ -106,9 +108,8 @@ body {
 	.left { float:left; }
 }
 
-.main-container, .footer-container {
-	width:90%;
-	margin:0 5%; 
+.header-container, .footer-container {
+	background-color:$grey-color-light;
 }
 
 .icon {
@@ -126,7 +127,11 @@ body {
 	}
 }
 
-
+// IMAGE PLACEHOLDERS
+.image-container {
+	background-color:$grey-color;
+	border:$cp-border; 
+}
 
 
 
