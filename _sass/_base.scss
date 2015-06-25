@@ -108,22 +108,25 @@ body {
 	.left { float:left; }
 }
 
-.header-container, .footer-container {
-	background-color:$grey-color-light;
-}
-
 .icon {
 	width: rem(30);
 	height: rem(30);
 	display: block;
 	vertical-align: middle;
 	cursor: pointer;
-	&.social-icon {
-		width: rem(16);
-		height: rem(16);
-	}
 	svg {
 		stroke-width: 2;
+	}
+}
+
+.social-icon {
+	width: rem(35);
+	height: rem(35);
+	svg {
+		fill: $grey-color-light;
+		&:hover, &:focus {
+			fill: $grey-color-dark;
+		}
 	}
 }
 
