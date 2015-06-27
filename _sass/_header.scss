@@ -1,3 +1,60 @@
 .header-container {
+	padding: rem($space-large) 0 (rem($space-large) - rem($space));
 	background-color: $grey-color-light;
+	h1 {
+		font-size: rem(35); 
+		@include media($tablet){
+			font-size: rem(45);
+		}
+		@include media($desktop){
+			font-size: rem(55);
+			line-height: 1.4;
+		}
+	}
+	.subhead {
+		@extend %margin-padding-reset;
+		font-size:$base-font-size + 0.25; 
+		@include media($tablet-plus){
+			font-size: $large-font-size;
+		}
+		@include media($tablet-plus){
+			font-size: $large-font-size + 0.25;
+		}
+	}
+}
+
+.greeting {
+	opacity:0;
+	@include animation(move-down 0.5s ease 0.3s 1 forwards); 
+}
+
+.comma {
+	opacity:0;
+	@include animation(move-down 0.25s ease 0.8s 1 forwards); 
+}
+
+.intro {
+	opacity:0; 
+	@include animation(move-down 0.75s ease 1.25s 1 forwards); 
+}
+
+.subhead {
+	position: relative;
+	width: 100%;
+	height: $base-font-size;
+	opacity: 0; 
+	@include animation(move-down 0.8s ease 2s 1 forwards); 
+	span {
+		position: absolute;
+		left: 20%;
+		right: 20%;
+	}
+	.first {
+		opacity: 1;
+		@include animation(hide-reveal 6s $ease-in-out-quint infinite);
+	}
+	.second {
+		opacity: 0;
+		@include animation(hide-reveal 6s $ease-in-out-quint 3s infinite);
+	}
 }

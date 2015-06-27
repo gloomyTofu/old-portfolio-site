@@ -1,0 +1,86 @@
+.main {
+	section {
+		&.page-section {
+			clear:both;
+		}
+		header {
+			background: url(../images/line.svg) no-repeat 0 50%;
+			@include fill-parent();
+			h1 {
+				font-size: rem(25); 
+				@include media($desktop){
+					font-size: rem(30); 
+				}
+			}
+			span {
+				background-color: $background-color;
+				padding: 0 $space-small; 
+			}
+			@include media($desktop) {
+				@include span-columns(10);
+				@include shift(1);
+			}
+		}
+	}
+	
+	@include media($desktop-plus) {
+		width: $max-width;
+		max-width: rem(1280);
+		margin: 0 auto;
+  } 
+}
+
+.section-wrap {
+	@extend .page-section;
+	@include media($desktop) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+	&.small-space {
+		padding: rem($space) 0;
+	}
+}
+
+.article-tiles { 
+	article {
+		margin-bottom: $space-small;
+	
+		.article-wrap {
+			overflow:hidden;
+			img {
+				width:100%; 
+			}
+		}
+		
+		&.medium-tile {
+			@include media($tablet-plus) {
+				@include span-columns(4 of 8);
+			}
+		}
+		&.small-tile {
+			@include media($tablet) {
+				@include span-columns(4 of 8);
+			}
+			@include media($desktop) {
+				@include span-columns(3 of 10);
+			}
+		}
+		&.tile4 {
+			@include media($tablet) {
+				@include omega();
+			}
+			&.small-tile {
+				@include media($desktop) {
+					@include span-columns(4 of 10);
+				}
+			}
+		}
+		&.tile2 { @include omega(); }
+		&.tile {
+			border: $cp-border-2;
+			&:hover, &:focus {
+				background-color: transparentize($grey-color-dark, 0.85);
+			}
+		}
+	}
+}

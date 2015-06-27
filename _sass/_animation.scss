@@ -1,0 +1,46 @@
+@include keyframes(heart-beat) {
+  from {
+    @include transform(scale(0.85));
+  }
+  to {
+    @include transform(scale(1));
+  }
+}
+
+@include keyframes(move-down) {
+	from {
+		opacity: 0;
+		@include transform(translateY(-25px));
+	}
+	to {
+		opacity: 1; 
+		@include transform(translateY(0));
+	}
+}
+
+@include keyframes(hide-reveal) {
+  0% {
+    opacity: 0;
+  }
+	25% {
+		opacity:1; 
+	}
+	30% {
+		opacity:1; 
+	}
+	75% {
+		opacity:0; 
+	}
+	100% {
+		opacity:0; 
+	}
+}
+
+@include keyframes(enlarge) {
+  0% {
+    @include transform(scale(1));
+  }
+  100% {
+    @include transform(scale(1.5));
+  }
+}

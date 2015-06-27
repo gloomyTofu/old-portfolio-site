@@ -1,7 +1,5 @@
-$nav-bar-height: rem(50);
+$nav-bar-height: rem($space);
 $logo-width: 1.175rem;
-$timing-duration: 0.3s;
-$timing-function: ease-out;
 
 .sticky-navigation {
 	position: fixed;
@@ -23,12 +21,12 @@ a.cp-logo {
 	height: auto;
 	display: block;
 	outline: none;
-	background-color: $grey-color-dark;
-	@include transition(background-color 0.15s $timing-function);
 	overflow: hidden;
 	cursor: pointer;
+	background-color: $grey-color-dark;
+	@include transition(background-color 0.15s $timing-function);
 	&:hover, &:focus {
-		background-color: lighten($grey-color-dark,10);
+		background-color: lighten($grey-color-dark,25);
 	}
 	@include media($mobile-tablet){
 		left:0;
@@ -42,18 +40,19 @@ a.cp-logo {
 	}
 }
 
-// MOBILE MENU -> SECTION = RIGHT
-.sticky-navigation-mobile-menu{
-
+#cp-logo {
+	&:hover, &:focus {
+		@include animation(heart-beat 0.5s alternate-reverse $ease-out-circ infinite);
+	}
 }
 
+// MOBILE MENU -> SECTION = RIGHT
 .sticky-navigation-menu {
 	font-size: 1.25rem;
 	line-height: 1.5;
 	font-weight:300;
-	list-style-type:none;
 	font-family: $stylized-font-family;
-	@include transition(all 0.5s $timing-function);
+	@extend %transition;
 	
 	@include media($mobile-tablet){
 		display: none;
@@ -71,6 +70,7 @@ a.cp-logo {
 	@include media($mobile-tablet){
 		height:100%;
 		background-color: $primary-color;
+		@include transition(all 0.5s $timing-function);
 		.sticky-navigation-menu {
 			display:block;
 			position: fixed;
@@ -78,12 +78,13 @@ a.cp-logo {
 			height: 100%;
 			left: 0;
 			text-align: center;
+			margin-top: rem($space-small);
 		}
 	}
 }
 
 ul.sticky-navigation-menu li {
-	padding-right: rem(20);
+	padding-right: rem($space-small);
 		&:last-child {
 			padding-right:0;
 		}

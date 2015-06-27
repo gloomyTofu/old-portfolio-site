@@ -2,9 +2,9 @@
 title: Carie Phon | Interaction Designer + Developer
 email: hello@cariephon.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, my name is Carie Phon. I'm a designer and developer who loves taking complex ideas and translating them into simple yet sophisticated websites and applications that are charming, intuitive, and fun to use.
+  Hi, my name is Carie Phon. I'm a designer and developer who loves breaking down complex ideas and turning them into simple yet sophisticated websites and apps that are charming, intuitive, and super fun to use.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://gloomyTofu.github.io" #"http://cariephon.com" # the base hostname & protocol for your site
+url: "http://cariephon.com" # the base hostname & protocol for your site
 twitter_username: cariephon
 github_username:  gloomyTofu
 

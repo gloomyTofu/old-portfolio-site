@@ -7,27 +7,68 @@ excerpt: ""
 
 <div class="header-container">
 	<header class="wrapper center clearfix">
-		<h1>Hi. I'm Carie Phon.</h1>
-		<h2>Interaction Designer/Developer</h2>
+		<div class="section-wrap">
+			<h1>
+				<span class="greeting">Hi</span><span class="comma">, </span>
+				<span class="intro">I'm {{ site.data.settings.name }}.</span>
+			</h1>
+			<p class="subhead">
+				<span class="first">{{ site.data.settings.job }}</span>
+				<span class="second">{{ site.data.settings.other-job }}</span>
+			</p>
+		</div>
 	</header>
 </div>
 
 <div class="main-container">
   <main class="main wrapper center clearfix">
-		<section id="work">
-			<h1>Work</h1>
+		
+		{% include work.html %}
+		
+		<section class="page-section" id="about">
+			<header>
+				<h1>
+					<span class="section-header">About</span>
+				</h1>
+			</header>
+			<div class="section-wrap small-space">
+				<p>	I'm a designer and developer based in Seattle, Washington. In 2015, I graduated with a Masters in Web Design and New Media at the [Academy of Art University](http://www.academyart.edu/academics/web_design/graduate){:target="_blank"}.
+	My experience ranges from web and print design to interaction and front-end development. I’m always advocating for the user: balancing aesthetics with technology and delight with usability.
+	When I’m not desiging or coding, you’ll find me exploring new places to eat, sketching, and playing with my dog Tofu.</p>
+			</div>
 		</section>
 
-		<section id="about">
-			<h1>About</h1>
+		<section class="page-section" id="resume">
+			<header>
+				<h1>
+					<span class="section-header">Resume</span>
+				</h1>
+			</header>
+			<div class="section-wrap small-space">
+		
+			</div>
 		</section>
 
-		<section id="resume">
-			<h1>Resume</h1>
+		<section class="page-section" id="notes">
+			<header>
+				<h1>
+					<span class="section-header">Notes</span>
+				</h1>
+			</header>
+			<div class="section-wrap small-space">
+	
+			</div>
 		</section>
-
-		<section id="notes">
-			<h1>Notes</h1>
+		
+		<section class="page-section" id="contact">
+			<header>
+				<h1>
+					<span class="section-header">Contact</span>
+				</h1>
+			</header>
+			<div class="section-wrap small-space">
+	
+			</div>
 		</section>
 	</main>
 </div>

@@ -11,9 +11,9 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+    color: $text-color;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
 }
 
 /*
@@ -94,8 +94,6 @@ textarea {
 /* ==========================================================================
    CP Custom Styles
    ========================================================================== */
-.center {text-align: center; }
-
 body {
 	font-size: $base-font-size;
 	line-height: $base-line-height;
@@ -107,6 +105,20 @@ body {
 	.right { float:right; }
 	.left { float:left; }
 }
+
+.page-section {
+	padding: rem($space) 0;
+	@include media($desktop){
+		padding: rem($space-large) 0;
+	}
+}
+
+ul, ol {
+	list-style-type: none;
+	@extend %margin-padding-reset;
+}
+
+.center {text-align: center; }
 
 .icon {
 	width: rem(30);
@@ -120,34 +132,37 @@ body {
 }
 
 .social-icon {
-	width: rem(35);
-	height: rem(35);
+	width: rem(40);
+	height: rem(40);
 	svg {
 		fill: $grey-color-light;
 		&:hover, &:focus {
-			fill: $grey-color-dark;
+			fill: $primary-color;
 		}
 	}
+}
+
+// TYPOGRAPHY
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: $heading-line-height;
+	margin: 0;
+}
+
+h1 {
+	font-family: $stylized-font-family;
+	font-weight:400;
 }
 
 // IMAGE PLACEHOLDERS
 .image-container {
 	background-color:$grey-color;
-	border:$cp-border; 
+	border:$cp-border-2; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes

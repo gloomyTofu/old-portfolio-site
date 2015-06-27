@@ -1,0 +1,16 @@
+# General Site Info
+name: Carie Phon
+job: Interaction Designer
+other-job: Front-End Developer
+email: hello@cariephon.com
+
+# About Me
+short-description: >
+
+# Work
+projects:
+- {name: Snack Street App, folder: 'snack-street', file: 'work/snack-street.html'}
+- {name: Waffle App, folder: 'waffle-app', file: 'work/waffle-app.html'}
+- {name: Meditation App, folder: 'meditation', file: 'work/meditation.html'}
+- {name: PFD Sale, folder: 'pfd-sale', file: 'work/pfd-sale.html'}
+- {name: Style Guide, folder: 'cdk-style-guide', file: 'work/style-guide.html'}

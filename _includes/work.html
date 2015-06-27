@@ -1,0 +1,41 @@
+<section class="page-section" id="work">
+	<header>
+		<h1>
+			<span class="section-header">Work</span>
+		</h1>
+	</header>
+	<div class="section-wrap small-space">
+		<div class="article-tiles">
+			{% for project in site.data.settings.projects %}
+			<article class="tile tile1 medium-tile">
+				<div class="article-wrap" data-folder="{{ project.folder }}">
+					<img src="/assets/images/work/{{project.folder}}/thumb.jpg 1x" src="/assets/images/work/{{project.folder}}/thumb@2x.jpg 2x" alt="{{ project.name }}" />
+				</div>
+			</article>
+			{% endfor %}
+			<!--<article class="tile2 medium-tile">
+				<div class="article-wrap">
+
+				</div>
+			</article>
+
+			<article class="tile3 small-tile">
+				<div class="article-wrap">
+
+				</div>
+			</article>
+
+			<article class="tile4 small-tile">
+				<div class="article-wrap">
+
+				</div>
+			</article>
+
+			<article class="tile5 small-tile">
+				<div class="article-wrap">
+
+				</div>
+			</article>-->
+		</div>
+	</div>
+</section>

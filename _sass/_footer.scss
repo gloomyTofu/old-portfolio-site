@@ -4,8 +4,8 @@
 
 ul.social-media-list {
 	display: inline-flex;
-	padding-left: 0;
-	-webkit-padding-start: 0;
+	@extend %margin-padding-reset;
+	margin-bottom: rem($space-xsmall);
 	li {
 		display: inline;
 		display: inline-block;
@@ -14,4 +14,17 @@ ul.social-media-list {
 	a {
 		display: block;
 	}
+}
+
+.social-icon {
+	svg {
+		&:hover, &:focus {
+			@include animation(enlarge 0.35s $ease-out-circ forwards);
+		}
+	}
+}
+
+p.copyright {
+	color: lighten($grey-color-dark,10);
+	@extend %margin-padding-reset;
 }

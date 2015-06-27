@@ -1,10 +1,11 @@
 <div class="footer-container">
 	<footer class="wrapper center clearfix">
 		
+		<div class="section-wrap small-space">	
 			<ul class="social-media-list">
 				{% if site.twitter_username %}
 				<li>
-					<a href="https://twitter.com/{{ site.twitter_username }}">
+					<a href="https://twitter.com/{{ site.twitter_username}}" title="Twitter">
 						<span class="icon social-icon icon--twitter">
 							{% include icons/social-twitter.html %}
 						</span>
@@ -13,7 +14,7 @@
 				</li>
 				{% endif %}
 				<li>
-					<a href="https://www.linkedin.com/pub/carie-phon/42/75b/a53">
+					<a href="https://www.linkedin.com/pub/carie-phon/42/75b/a53" title="LinkedIn">
 						<span class="icon social-icon icon--linkedin">
 							{% include icons/social-linkedin.html %}
 						</span>
@@ -22,7 +23,7 @@
 				</li>
 				{% if site.github_username %}
 				<li>
-					<a href="https://github.com/{{ site.github_username }}">
+					<a href="https://github.com/{{ site.github_username }}" title="Github">
 						<span class="icon social-icon icon--github">
 							{% include icons/social-github.html %}
 						</span>
@@ -31,14 +32,15 @@
 				</li>
 				{% endif %}
 				<li>
-					<a href="mailto:{{ site.email }}">
+					<a href="mailto:{{ site.email }}" title="Email">
 						<span class="icon social-icon icon--email">
 							{% include icons/social-email.html %}
 						</span>
 					</a>
 				</li>
 			</ul>
-			<p>© {{ site.time | date: "%Y" }} Carie Phon. All Rights Reserved. </p>
+			<p class="copyright">© {{ site.time | date: "%Y" }} Carie Phon. All Rights Reserved. </p>
+		</div>
 
 	</footer>
 </div>

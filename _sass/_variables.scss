@@ -5,12 +5,14 @@ $visual-grid-color: hsla(139,20%,81%,0.4);
 
 /* GLOBAL
    ========================================================================== */
-$base-font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: 'Quicksand', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$base-font-size:   1em;
 $small-font-size:  $base-font-size * 0.875;
+$large-font-size:  $base-font-size * 1.5;
 $base-line-height: 1.5;
+$heading-line-height: 1.2;
 
-$stylized-font-family:'Corben', serif; 
+$stylized-font-family:'Corben', Georgia, Cambria, 'Times New Roman', Times, serif; 
 
 $spacing-unit:     30px;
 
@@ -24,3 +26,18 @@ $grey-color-dark:  darken($grey-color, 40%);
 
 $text-color:       $grey-color-dark;
 $cp-border:				 1px solid $grey-color-dark;
+$cp-border-2:			 2px solid $grey-color-dark;
+
+
+// SPACING
+
+$space-xsmall: 15px;
+$space-small: 25px;
+$space: 50px;
+$space-large: 125px;
+
+
+// NAVIGATION
+
+$timing-duration: 0.3s;
+$timing-function: ease-out;
