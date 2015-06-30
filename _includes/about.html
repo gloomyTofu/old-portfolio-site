@@ -1,0 +1,44 @@
+<section class="page-section" id="about">
+	<header>
+		<h1>
+			<span class="section-header">About</span>
+		</h1>
+	</header>
+	<div class="section-wrap small-space">
+		<div class="left-col">
+			<div class="profile-pic">
+				{% include animation/profile-pic.html %}
+			</div>
+		</div>
+		<div class="right-col">
+			<h2>{{ site.data.settings.name }}</h2>
+			{{ site.data.settings.bio | markdownify }}
+		</div>
+	</div>
+</section>
+
+{% if site.data.settings.skills %}
+<section class="page-section" id="skills">
+	<header>
+		<h1>
+			<span class="section-header">Skills</span>
+		</h1>
+	</header>
+	<div class="section-wrap small-space">
+		<div class="skills-wrap">
+			{% for skill in site.data.settings.skills %}
+				<div class="skill">
+					<div class="skill-label {{ skill.name }}">
+						{{ skill.name }}
+					</div>
+					<div class="skill-indicator skill-level-{{ skill.value }}"> 
+						{% for i in (1..4) %}
+							<span></span>
+						{% endfor %}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+	</div>
+</section>
+{% endif %}

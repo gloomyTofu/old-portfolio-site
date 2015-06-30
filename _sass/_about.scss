@@ -1,0 +1,55 @@
+#about {
+	h2, p {
+		text-align: left; 
+	}
+}
+
+.profile-pic {
+	width: 75%; 
+	margin: 0 auto $space-small;
+	@include media($tablet) {
+		width: 50%;
+	}
+}
+
+.skill {
+	float:left;
+	text-align: left;
+	margin-bottom: $space;
+	
+	@include media($mobile) {
+		@include span-columns(4);
+	}
+	
+	@include media($tablet-plus) {
+		@include span-columns(4 of 8);
+		@include pad();
+	}
+	.skill-label, .skill-indicator {
+		float:left;
+		
+		@include media($mobile) {
+			@include span-columns(2 of 4);
+		}
+		@include media($tablet-plus) {
+			@include span-columns(2 of 4);
+		}
+	}
+	.skill-label { 
+		text-align: right; 
+		font-size: $space-small;
+		
+		@include media($desktop) {
+			font-size: $space;
+		}
+	}
+	.skill-indicator {
+		text-align: left;
+		span {
+			width: $space-small;
+			height: $space-small; 
+			border: $cp-border;
+			display: inline-block;
+		}
+	}
+}

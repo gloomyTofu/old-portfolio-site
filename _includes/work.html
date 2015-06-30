@@ -7,9 +7,9 @@
 	<div class="section-wrap small-space">
 		<div class="article-tiles">
 			{% for project in site.data.settings.projects %}
-			<article class="tile tile1 medium-tile">
-				<div class="article-wrap" data-folder="{{ project.folder }}">
-					<img src="/assets/images/work/{{project.folder}}/thumb.jpg 1x" src="/assets/images/work/{{project.folder}}/thumb@2x.jpg 2x" alt="{{ project.name }}" />
+			<article data-folder="{{ project.folder }}" class="tile {{ project.class }}">
+				<div class="article-wrap">
+					<img src="/assets/images/work/{{project.folder}}/thumb.jpg 1x" srcset="/assets/images/work/{{project.folder}}/thumb@2x.jpg 2x" alt="{{ project.name }}" />
 				</div>
 			</article>
 			{% endfor %}

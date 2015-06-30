@@ -4,13 +4,30 @@ job: Interaction Designer
 other-job: Front-End Developer
 email: hello@cariephon.com
 
-# About Me
-short-description: >
 
 # Work
 projects:
-- {name: Snack Street App, folder: 'snack-street', file: 'work/snack-street.html'}
-- {name: Waffle App, folder: 'waffle-app', file: 'work/waffle-app.html'}
-- {name: Meditation App, folder: 'meditation', file: 'work/meditation.html'}
-- {name: PFD Sale, folder: 'pfd-sale', file: 'work/pfd-sale.html'}
-- {name: Style Guide, folder: 'cdk-style-guide', file: 'work/style-guide.html'}
+- {name: Snack Street App, class: tile1 medium-tile, folder: 'snack-street', file: 'work/snack-street.html'}
+- {name: Waffle App, class: tile2 medium-tile, folder: 'waffle-app', file: 'work/waffle-app.html'}
+- {name: Meditation App, class: tile3 small-tile, folder: 'meditation', file: 'work/meditation.html'}
+- {name: PFD Sale, class: tile4 small-tile, folder: 'pfd-sale', file: 'work/pfd-sale.html'}
+- {name: Style Guide, class: tile5 small-tile, folder: 'cdk-style-guide', file: 'work/cdk-style-guide.html'}
+
+
+# About Me
+bio: |	
+ I'm a designer and developer based in Seattle, Washington. In 2015, I graduated with a Masters in Web Design and New Media at the [Academy of Art University](http://www.academyart.edu/academics/web_design/graduate).
+ 
+ My experience ranges from web and print design to interaction and front-end development. I’m always advocating for the user: balancing aesthetics with technology and delight with usability.
+ 
+ When I’m not desiging or coding, you’ll find me exploring new places to eat, sketching, and playing with my dog Tofu.
+
+skills:
+- {name: HTML5, value: '4'}
+- {name: CSS, value: '4'}
+- {name: JQUERY, value: '2'}
+- {name: ANGULAR, value: '2'}
+- {name: PHOTOSHOP, value: '4'}
+- {name: ILLUSTRATOR, value: '4'}
+- {name: INDESIGN, value: '3'}
+- {name: JAVASCRIPT, value: '2'}

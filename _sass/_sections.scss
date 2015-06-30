@@ -1,7 +1,15 @@
 .main {
 	section {
 		&.page-section {
-			clear:both;
+			@extend .clearfix;
+			&:nth-child(2n){
+				background-color: $background-color-grey;
+				header {
+					span {
+						background-color: $background-color-grey;
+					}
+				}
+			}
 		}
 		header {
 			background: url(../images/line.svg) no-repeat 0 50%;
@@ -20,31 +28,41 @@
 				@include span-columns(10);
 				@include shift(1);
 			}
+			@include media($desktop-plus) {
+				@include span-columns(8);
+				@include shift(2);
+			}
 		}
-	}
-	
-	@include media($desktop-plus) {
-		width: $max-width;
-		max-width: rem(1280);
-		margin: 0 auto;
-  } 
+	} 
 }
 
 .section-wrap {
+	margin:0 auto;
+	width: $max-width;
 	@extend .page-section;
 	@include media($desktop) {
 		@include span-columns(10);
 		@include shift(1);
+  }
+	@include media($desktop-plus) {
+		@include span-columns(8);
+		@include shift(2);
 	}
 	&.small-space {
 		padding: rem($space) 0;
 	}
+	.left-col, .right-col {
+		@include media($desktop) {
+			@include span-columns(5 of 10);
+		}
+	}
 }
+
+
 
 .article-tiles { 
 	article {
 		margin-bottom: $space-small;
-	
 		.article-wrap {
 			overflow:hidden;
 			img {
@@ -58,6 +76,14 @@
 			}
 		}
 		&.small-tile {
+			.article-wrap {
+				img {
+					@include media($desktop) {
+						width: auto;
+						height: rem(200);
+					}
+				}
+			}
 			@include media($tablet) {
 				@include span-columns(4 of 8);
 			}
@@ -78,6 +104,7 @@
 		&.tile2 { @include omega(); }
 		&.tile {
 			border: $cp-border-2;
+			background-color: $background-color-grey;
 			&:hover, &:focus {
 				background-color: transparentize($grey-color-dark, 0.85);
 			}
