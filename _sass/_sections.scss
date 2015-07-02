@@ -1,5 +1,6 @@
 .main {
 	section {
+		@include clearfix;
 		&.page-section {
 			@extend .clearfix;
 			&:nth-child(2n){
@@ -51,13 +52,18 @@
 	&.small-space {
 		padding: rem($space) 0;
 	}
+	&.xsmall-space {
+		padding: rem($space-small) 0;
+		@include media($mobile) {
+			padding: rem($space-xsmall) 0;
+		}
+	}
 	.left-col, .right-col {
 		@include media($desktop) {
 			@include span-columns(5 of 10);
 		}
 	}
 }
-
 
 
 .article-tiles { 
@@ -105,9 +111,6 @@
 		&.tile {
 			border: $cp-border-2;
 			background-color: $background-color-grey;
-			&:hover, &:focus {
-				background-color: transparentize($grey-color-dark, 0.85);
-			}
 		}
 	}
 }

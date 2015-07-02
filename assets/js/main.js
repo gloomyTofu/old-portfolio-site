@@ -6,4 +6,10 @@ $(document).ready(function(){
 		$('.sticky-navigation').toggleClass('open','');
 	});
 	
+	$('.hide').on('click', function(e){
+		e.preventDefault();
+		$(this).toggleClass('active','');
+		$('.sticky-navigation').toggleClass('open','');
+	});
+	
 })

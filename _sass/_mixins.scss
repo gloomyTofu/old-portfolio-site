@@ -1,7 +1,18 @@
 // BOX SHADOW
-
 @mixin box-shadow( $horiz : 0 , $vert : 0 , $blur : 50px , $spread : -15px , $color : rgba(51,51,51,0.75) ){
   -webkit-box-shadow: $horiz $vert $blur $spread $color;
   -moz-box-shadow: $horiz $vert $blur $spread $color;
   box-shadow: $horiz $vert $blur $spread $color;
+}
+
+// SLIDE IN
+@mixin slide-in-start($startY: -250px, $timeDur: 0.5s, $timeFun: ease-in-out, $opacity: 0 ){
+	@include transform(translateY($startY));
+		@include transition(transform $timeDur $timeFun, opacity $timeDur $timeFun);
+		opacity: $opacity;
+}
+
+@mixin slide-in-end ($endY: 0, $opacity: 1 ) {
+	@include transform(translateY($endY));
+	opacity: $opacity;
 }

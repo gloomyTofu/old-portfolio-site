@@ -5,37 +5,44 @@
 		</h1>
 	</header>
 	<div class="section-wrap small-space">
-		<div class="article-tiles">
+		<!--<div class="article-tiles">
 			{% for project in site.data.settings.projects %}
 			<article data-folder="{{ project.folder }}" class="tile {{ project.class }}">
 				<div class="article-wrap">
-					<img src="/assets/images/work/{{project.folder}}/thumb.jpg 1x" srcset="/assets/images/work/{{project.folder}}/thumb@2x.jpg 2x" alt="{{ project.name }}" />
+					<a href="{{ project.file }}">
+						<figure>
+							<img src="/assets/images/work/{{project.folder}}/preview.jpg 1x" srcset="/assets/images/work/{{project.folder}}/preview@2x.jpg 2x" alt="{{ project.name }}" />
+							<figcaption class="overlay">
+								<div class="overlay-wrap">
+									<h2>{{ project.name }}</h2>
+									<p>{{ project.description }}</p>
+								</div>
+							</figcaption>
+						</figure>
+					</a>
 				</div>
 			</article>
 			{% endfor %}
-			<!--<article class="tile2 medium-tile">
-				<div class="article-wrap">
-
+		</div>-->
+		<div class="article-tiles">
+			{% for work in site.categories.work %}
+				<article data-folder="{{ work.folder }}" class="tile {{ work.class }}">
+					<div class="article-wrap">
+					<a href="{{ work.url }}">
+						<figure>
+							<img src="/assets/images/work/{{work.folder}}/preview.jpg 1x" srcset="/assets/images/work/{{work.folder}}/preview@2x.jpg 2x" alt="{{ work.title }}" />
+							<figcaption class="overlay">
+								<div class="overlay-wrap">
+									<h2>{{ work.title }}</h2>
+									<p>{{ work.excerpt }}</p>
+								</div>
+							</figcaption>
+						</figure>
+					</a>
 				</div>
-			</article>
-
-			<article class="tile3 small-tile">
-				<div class="article-wrap">
-
-				</div>
-			</article>
-
-			<article class="tile4 small-tile">
-				<div class="article-wrap">
-
-				</div>
-			</article>
-
-			<article class="tile5 small-tile">
-				<div class="article-wrap">
-
-				</div>
-			</article>-->
+				</article>
+			{% endfor %}
 		</div>
+		
 	</div>
 </section>

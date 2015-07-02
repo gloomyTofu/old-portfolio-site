@@ -1,0 +1,38 @@
+.button {
+	padding: rem(10) $space-xsmall; 
+	background-color: $grey-color-light;
+	color: $grey-color-dark;
+	border: $cp-border;
+	box-shadow: 0 1px $grey-color; 
+	font-size: $medium-font-size;
+	font-weight: 400;
+	text-decoration: none;
+	@include transition(all 0.1s ease-in-out);
+	&:hover, &:focus {
+		background-color: $grey-color;
+	}
+	&:active {
+		box-shadow: 0 0 $grey-color;
+		@include transform(translateY(1px))
+	}
+	&:last-child {
+		margin-left: $space-xsmall; 
+	}
+	&.primary-button {
+		color: $grey-color-dark;
+		background-color: $primary-color; 
+		&:hover, &:focus {
+			color: #fff; 
+			background-color: $primary-color-dark;
+		}
+	}
+}
+
+.button-group {
+	@include clearfix;
+	text-align: center; 
+	@include media($desktop){
+		text-align: right; 
+	}
+	@include margin(null null ($space + $space-small) null);
+}

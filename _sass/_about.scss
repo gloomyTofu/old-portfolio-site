@@ -1,14 +1,20 @@
-#about {
-	h2, p {
+#about, #resume {
+	h2, h3, p {
 		text-align: left; 
 	}
 }
 
 .profile-pic {
 	width: 75%; 
+	border: $cp-border;
+	border-radius: 50%;  
 	margin: 0 auto $space-small;
+	overflow: hidden;
 	@include media($tablet) {
-		width: 50%;
+		width: 50%; 
+	}
+	img {
+		width: 100%; 
 	}
 }
 
@@ -21,10 +27,20 @@
 		@include span-columns(4);
 	}
 	
-	@include media($tablet-plus) {
-		@include span-columns(4 of 8);
-		@include pad();
+	@include media($tablet) {
+		@include span-columns(8);
 	}
+	
+	@include media($desktop) {
+		@include span-columns(4 of 8);
+	}
+	
+	&:nth-child(2n) {
+		@include media($desktop) {
+			@include omega();
+		}
+	}
+	
 	.skill-label, .skill-indicator {
 		float:left;
 		
@@ -40,16 +56,43 @@
 		font-size: $space-small;
 		
 		@include media($desktop) {
-			font-size: $space;
+
 		}
 	}
 	.skill-indicator {
-		text-align: left;
+		text-align: center;
+		
+		@include media($tablet) {
+			text-align: left; 
+		}
 		span {
 			width: $space-small;
 			height: $space-small; 
 			border: $cp-border;
 			display: inline-block;
+		}
+	}
+}
+
+.skill-indicator {
+	&.skill-level-1, &.skill-level-2, &.skill-level-3, &.skill-level-4 {
+		span:nth-child(1) {
+			background-color: $primary-color; 
+		}
+	}
+	&.skill-level-2, &.skill-level-3, &.skill-level-4 {
+		span:nth-child(2) {
+			background-color: $primary-color; 
+		}
+	}
+	&.skill-level-3, &.skill-level-4 {
+		span:nth-child(3) {
+			background-color: $primary-color; 
+		}
+	}
+	&.skill-level-4 {
+		span:nth-child(4) {
+			background-color: $primary-color; 
 		}
 	}
 }

@@ -1,15 +1,5 @@
+{% for menu in site.data.settings.menu %}
 <li>
-	<a href="#work">Work</a>
+	<a href="{{ site.url }}{{ menu.url }}">{{ menu.name }}</a>
 </li>
-<li>
-	<a href="#about">About</a>
-</li>
-<li>
-	<a href="#resume">Resume</a>
-</li>
-<li>
-	<a href="#notes">Notes</a>
-</li>
-<li>
-	<a href="#contact">Contact</a>
-</li>
+{% endfor %}

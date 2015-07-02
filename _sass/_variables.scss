@@ -1,6 +1,6 @@
 /* DISPLAY GRID
    ========================================================================== */
-$visual-grid: true;
+//$visual-grid: true;
 $visual-grid-color: hsla(139,20%,81%,0.4);
 
 /* GLOBAL
@@ -8,7 +8,9 @@ $visual-grid-color: hsla(139,20%,81%,0.4);
 $base-font-family: 'Quicksand', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $base-font-size:   1em;
 $small-font-size:  $base-font-size * 0.875;
+$medium-font-size:  $base-font-size * 1.15;
 $large-font-size:  $base-font-size * 1.5;
+$thin-font-weight: 300; 	
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
 

@@ -1,22 +1,3 @@
-<section class="page-section" id="about">
-	<header>
-		<h1>
-			<span class="section-header">About</span>
-		</h1>
-	</header>
-	<div class="section-wrap small-space">
-		<div class="left-col">
-			<div class="profile-pic">
-				{% include animation/profile-pic.html %}
-			</div>
-		</div>
-		<div class="right-col">
-			<h2>{{ site.data.settings.name }}</h2>
-			{{ site.data.settings.bio | markdownify }}
-		</div>
-	</div>
-</section>
-
 {% if site.data.settings.skills %}
 <section class="page-section" id="skills">
 	<header>

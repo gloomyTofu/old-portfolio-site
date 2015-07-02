@@ -1,0 +1,83 @@
+---
+layout: default
+---
+<div class="header-container post">
+	<header class="wrapper center clearfix">
+		<h1>{{ page.title }}</h1>
+		<p class="subhead">{{ page.description }}</p>
+	</header>
+</div>
+
+<div class="main-container">
+  <main class="main center clearfix">
+		<section class="post-section">
+			<div class="section-wrap xsmall-space">
+				<div class="featured-image">
+					<div class="image-container">
+						{% if page.video %}
+						<iframe src="{{page.video}}" width="800" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						{% elsif page.image.full %}
+							<img src="/assets/images/work/{{page.folder}}/full-image.jpg 1x" srcset="/assets/images/work/{{page.folder}}/full-image@2x.jpg 2x" alt="{{ page.title }}" />
+						{% endif %}
+					</div>
+					{% if page.launch %}
+					<div class="button-group">
+						<a href="{{ page.launch.url }}" class="button primary-button" target="_blank">
+							{{ page.launch.title }}
+						</a>
+						<a href="{{ page.github.url }}" class="button" target="_blank">
+							{{ page.github.title }}
+						</a>
+					</div>
+					{% endif %}
+				</div>
+				<div class="post-content">
+					<div class="two-col-main">
+						{{ content }}
+					</div>
+					<div class="two-col-secondary">
+						<div class="post-group">
+							<h2>{{ page.info.title }}</h2>
+							<div class="post-listing">
+								<div class="post-label">
+									{{ page.info.group.title }}
+								</div>
+								<div class="post-title">
+									{{ page.info.group.description }}
+								</div>
+							</div>
+							<div class="post-listing">
+								<div class="post-label">
+									{{ page.info.group2.title }}
+								</div>
+								<div class="post-title">
+									{{ page.info.group2.description }}
+								</div>
+							</div>
+							<div class="post-listing">
+								<div class="post-label">
+									{{ page.info.group3.title }}
+								</div>
+								<div class="post-title">
+									{{ page.info.group3.description }}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--<section class="full-image">
+			{% if page.image.full %}
+				<div class="header-image">
+					<img src="/assets/images/work/{{page.folder}}/full-image.jpg 1x" srcset="/assets/images/work/{{page.folder}}/full-image@2x.jpg 2x" alt="{{ page.title }}" />
+				</div>
+				{% endif %}
+		</section>-->
+		
+		{% include work.html %}
+		
+	</main>
+</div>
+

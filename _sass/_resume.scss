@@ -1,0 +1,47 @@
+.two-thirds-col {
+	@include media($tablet-plus) {
+		@include span-columns(5);
+	}
+}
+
+.one-thirds-col {
+	@include media($tablet-plus) {
+		@include span-columns(3);
+	}
+}
+
+.post-listing {
+	text-align: left;
+	margin-top: $space-small;
+	.post-label {
+		font-family: $stylized-font-family;
+		font-size: $medium-font-size;
+		span.post-date {
+			float: right; 
+			font-family: $base-font-family;
+			font-size: $small-font-size;
+			@include media($tablet) {
+				float: none;
+				display:block;
+			}
+		}
+	}
+	&:last-child {
+		margin-bottom: $space-small; 
+	}
+
+	ul {
+		margin-left: $space-xsmall;
+		padding-bottom: $space-small; 
+		li {
+			list-style-type: disc;
+		}
+	}
+}
+
+.post-group {
+	padding-bottom: $space-small;
+	h2, h3 {
+		text-transform: uppercase;
+	}
+}

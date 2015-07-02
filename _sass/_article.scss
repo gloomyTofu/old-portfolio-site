@@ -1,0 +1,52 @@
+$header-image-height: 500px;
+
+.header-container {
+	&.post {
+		padding: rem($space) 0 (rem($space) - rem($space-small));
+		background-color: transparent;
+		opacity: 1; 
+		@include transition(opacity 0.1s ease-in);
+		header {
+			padding-top: $space-small;
+		}
+	}
+}
+
+.post-section {
+	text-align: left; 
+	.featured-image {
+		max-width: rem(800);
+		@include margin(null auto $space auto);
+		.image-container {
+			@extend .featured-image;
+			margin-bottom: rem(35); 
+			max-height: rem(600);
+		}
+	}
+	.screenshot-container {
+		background-color: $grey-color;
+		border: $cp-border-2;
+		overflow: hidden; 
+		@include margin($space-small null $space-small null);
+		img {
+			width: 100%; 
+		}
+	} 
+}
+
+.two-col-main {
+	margin-bottom: $space;
+	@include media($desktop) {
+		@include span-columns(9);
+		padding-right: $space-small;
+	}
+	p {
+		@include margin($space-small 0 $space-small 0);
+	}
+}
+
+.two-col-secondary {
+	@include media($desktop) {
+		@include span-columns(3);
+	}
+}

@@ -119,6 +119,7 @@ ul, ol {
 }
 
 .center {text-align: center; }
+.thin-font {font-weight: $thin-font-weight; }
 
 .icon {
 	width: rem(30);
@@ -156,12 +157,31 @@ h6 {
 h1 {
 	font-family: $stylized-font-family;
 	font-weight:400;
-}
+} 
 
-// IMAGE PLACEHOLDERS
+// http://www.smashingmagazine.com/2014/02/27/making-embedded-content-work-in-responsive-design/
+
+// RESPONSIVE IMAGE/VIDEO CONTAINER
 .image-container {
-	background-color:$grey-color;
-	border:$cp-border-2; 
+	background-color: $grey-color;
+	border: $cp-border-2;
+	position: relative; 
+	padding-bottom: 56.25%;
+	padding-top: 35px;
+	height: 0;
+	overflow: hidden;
+	img, iframe {
+		height: 100%; 
+		position: absolute;
+		top: 0;
+		left:0;
+	}
+	img {
+		
+	}
+	iframe {
+		width: 100%;
+	}
 }
 
 /* ==========================================================================

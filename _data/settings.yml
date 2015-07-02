@@ -4,14 +4,22 @@ job: Interaction Designer
 other-job: Front-End Developer
 email: hello@cariephon.com
 
+# Menu 
+menu:
+- {name: Work, url: '#work'}
+- {name: About, url: '#about'}
+#- {name: Skills, url: '#skills'}
+- {name: Resume, url: '#resume'}
+#- {name: Notes, url: '#notes'}
+- {name: Contact, url: '#contact'}
 
 # Work
 projects:
-- {name: Snack Street App, class: tile1 medium-tile, folder: 'snack-street', file: 'work/snack-street.html'}
-- {name: Waffle App, class: tile2 medium-tile, folder: 'waffle-app', file: 'work/waffle-app.html'}
-- {name: Meditation App, class: tile3 small-tile, folder: 'meditation', file: 'work/meditation.html'}
-- {name: PFD Sale, class: tile4 small-tile, folder: 'pfd-sale', file: 'work/pfd-sale.html'}
-- {name: Style Guide, class: tile5 small-tile, folder: 'cdk-style-guide', file: 'work/cdk-style-guide.html'}
+- {name: Snack Street, class: tile1 medium-tile, folder: 'snack-street', file: 'work/snack-street.html', description: Hybrid Mobile App}
+- {name: Waffle, class: tile2 medium-tile, folder: 'waffle-app', file: 'work/waffle-app.html', description: Concept iPad App}
+- {name: Meditation, class: tile3 small-tile, folder: 'meditation', file: 'work/meditation.html', description: jQuery Mobile App}
+- {name: PFD Sale, class: tile4 small-tile, folder: 'pfd-sale', file: 'work/pfd-sale.html', description: Responsive Sale Page}
+- {name: Templates, class: tile5 small-tile, folder: 'cdk-templates', file: 'work/cdk-templates.html', description: Optimized Workflow}
 
 
 # About Me
@@ -20,14 +28,18 @@ bio: |
  
  My experience ranges from web and print design to interaction and front-end development. I’m always advocating for the user: balancing aesthetics with technology and delight with usability.
  
- When I’m not desiging or coding, you’ll find me exploring new places to eat, sketching, and playing with my dog Tofu.
+ When I’m not desiging or coding, you’ll find me exploring new places to eat, watching MasterChef, sketching, and playing with my dog Tofu.
+
 
 skills:
 - {name: HTML5, value: '4'}
 - {name: CSS, value: '4'}
-- {name: JQUERY, value: '2'}
-- {name: ANGULAR, value: '2'}
 - {name: PHOTOSHOP, value: '4'}
 - {name: ILLUSTRATOR, value: '4'}
-- {name: INDESIGN, value: '3'}
+- {name: SASS, value: '3'}
+- {name: JQUERY, value: '2'}
+- {name: ANGULAR, value: '2'}
 - {name: JAVASCRIPT, value: '2'}
+
+
+# Resume

@@ -1,0 +1,49 @@
+figure {
+	@extend %margin-padding-reset;
+}
+
+.article-wrap {
+	position: relative; 
+	.overlay {
+		color:#fff;
+		background-color:transparentize($grey-color-dark,0.1); 
+		width: 100%;
+		height: 100%; 
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(center);
+		@include slide-in-start();
+		h2 {
+			border-bottom: 1px solid #fff;
+			text-transform: uppercase;
+			border-bottom: 1px solid #fff;
+			vertical-align: middle;
+			padding-bottom: rem(5); 
+			font-size: rem(30);
+			font-weight: 400;
+		}
+		p {
+			@extend %margin-padding-reset;
+			padding-top: rem(10); 
+		}
+	}
+	a {
+		text-decoration: none;
+		&:hover, &:focus {
+			.overlay {
+				@include slide-in-end();
+			}
+		}
+	}
+}
+
+.small-tile {
+	.overlay {
+		h2 {
+			font-size: $space-small;
+		}
+	}
+}
