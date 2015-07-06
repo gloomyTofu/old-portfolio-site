@@ -1,0 +1,35 @@
+.modal-overlay {
+	@include transition(opacity 0.25s);
+	@include position(fixed, 0);
+	background-color: rgba(255,255,255,0.95);
+	.modal-wrap {
+		@include transition(opacity 0.25s);
+		margin: auto;
+		overflow: auto;
+		position: relative;
+		.work-modal {
+		
+		}
+	}
+}
+
+.main-content {
+	.modal-overlay {
+		opacity: 0;
+		visibility: hidden;
+		z-index: 999;
+	}
+	&.modal-open {
+		.modal-overlay {
+			opacity: 1;
+			visibility: visible;
+			.modal-wrap {
+				top: 0.5em;
+			}
+		}
+	}
+}
+
+.modal-open {
+	overflow: hidden; 
+}

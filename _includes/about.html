@@ -1,0 +1,19 @@
+<section class="page-section" id="about">
+	<header>
+		<h1>
+			<span class="section-header">About</span>
+		</h1>
+	</header>
+	<div class="section-wrap small-space">
+		<div class="left-col">
+			<div class="profile-pic">
+				<!--{% include animation/profile-pic.html %}-->
+				<img src="/assets/images/profile/profile.jpg 1x" srcset="/assets/images/profile/profile@2x.jpg 2x" alt="Hi! I'm Carie Phon" />
+			</div>
+		</div>
+		<div class="right-col">
+			<h2>{{ site.data.settings.name }}</h2>
+			{{ site.data.settings.bio | markdownify }}
+		</div>
+	</div>
+</section>

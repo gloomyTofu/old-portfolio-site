@@ -94,6 +94,12 @@ textarea {
 /* ==========================================================================
    CP Custom Styles
    ========================================================================== */
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
 body {
 	font-size: $base-font-size;
 	line-height: $base-line-height;
@@ -113,6 +119,13 @@ body {
 	}
 }
 
+a {
+	color: $primary-color-dark;
+	&:hover, &:focus, &:visited {
+		color: $primary-color;
+	}
+}
+
 ul, ol {
 	list-style-type: none;
 	@extend %margin-padding-reset;
@@ -120,28 +133,6 @@ ul, ol {
 
 .center {text-align: center; }
 .thin-font {font-weight: $thin-font-weight; }
-
-.icon {
-	width: rem(30);
-	height: rem(30);
-	display: block;
-	vertical-align: middle;
-	cursor: pointer;
-	svg {
-		stroke-width: 2;
-	}
-}
-
-.social-icon {
-	width: rem(40);
-	height: rem(40);
-	svg {
-		fill: $grey-color-light;
-		&:hover, &:focus {
-			fill: $primary-color;
-		}
-	}
-}
 
 // TYPOGRAPHY
 h1,

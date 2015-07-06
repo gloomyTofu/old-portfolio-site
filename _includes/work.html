@@ -1,48 +1,36 @@
 <section class="page-section" id="work">
-	<header>
-		<h1>
-			<span class="section-header">Work</span>
-		</h1>
-	</header>
-	<div class="section-wrap small-space">
-		<!--<div class="article-tiles">
-			{% for project in site.data.settings.projects %}
-			<article data-folder="{{ project.folder }}" class="tile {{ project.class }}">
-				<div class="article-wrap">
-					<a href="{{ project.file }}">
-						<figure>
-							<img src="/assets/images/work/{{project.folder}}/preview.jpg 1x" srcset="/assets/images/work/{{project.folder}}/preview@2x.jpg 2x" alt="{{ project.name }}" />
-							<figcaption class="overlay">
-								<div class="overlay-wrap">
-									<h2>{{ project.name }}</h2>
-									<p>{{ project.description }}</p>
-								</div>
-							</figcaption>
-						</figure>
-					</a>
-				</div>
-			</article>
-			{% endfor %}
-		</div>-->
-		<div class="article-tiles">
-			{% for work in site.categories.work %}
-				<article data-folder="{{ work.folder }}" class="tile {{ work.class }}">
-					<div class="article-wrap">
-					<a href="{{ work.url }}">
-						<figure>
-							<img src="/assets/images/work/{{work.folder}}/preview.jpg 1x" srcset="/assets/images/work/{{work.folder}}/preview@2x.jpg 2x" alt="{{ work.title }}" />
-							<figcaption class="overlay">
-								<div class="overlay-wrap">
-									<h2>{{ work.title }}</h2>
-									<p>{{ work.excerpt }}</p>
-								</div>
-							</figcaption>
-						</figure>
-					</a>
-				</div>
-				</article>
-			{% endfor %}
-		</div>
+	<div class="project-details" id="project">
 		
+	</div>
+	
+	<div class="project-list">
+		<header>
+			<h1>
+				<span class="section-header">Work</span>
+			</h1>
+		</header>
+		<div class="section-wrap small-space">
+			<div class="article-tiles">
+				{% for work in site.categories.work %}
+					<article data-folder="{{ work.folder }}" class="tile {{ work.class }}">
+						<div class="article-wrap">
+						<a href="#work" data="{{ work.url }}">
+							<figure style="background-color: {{ work.background }};">
+								<img src="/assets/images/work/{{work.folder}}/preview.jpg 1x" srcset="/assets/images/work/{{work.folder}}/preview@2x.jpg 2x" alt="{{ work.title }}" />
+								<figcaption class="overlay">
+									<div class="overlay-wrap">
+										<h2>{{ work.title }}</h2>
+										<p>{{ work.excerpt }}</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+						<div class="work-section" id="work-section">
+						</div>
+					</div>
+					</article>
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 </section>

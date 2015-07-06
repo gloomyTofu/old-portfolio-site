@@ -18,13 +18,13 @@ projects:
 - {name: Snack Street, class: tile1 medium-tile, folder: 'snack-street', file: 'work/snack-street.html', description: Hybrid Mobile App}
 - {name: Waffle, class: tile2 medium-tile, folder: 'waffle-app', file: 'work/waffle-app.html', description: Concept iPad App}
 - {name: Meditation, class: tile3 small-tile, folder: 'meditation', file: 'work/meditation.html', description: jQuery Mobile App}
-- {name: PFD Sale, class: tile4 small-tile, folder: 'pfd-sale', file: 'work/pfd-sale.html', description: Responsive Sale Page}
+- {name: PFD Sale, class: tile4 small-tile, folder: 'pfd-sale', file: 'work/pfd-sale.html', description: Responsive Sale Page }
 - {name: Templates, class: tile5 small-tile, folder: 'cdk-templates', file: 'work/cdk-templates.html', description: Optimized Workflow}
 
 
 # About Me
 bio: |	
- I'm a designer and developer based in Seattle, Washington. In 2015, I graduated with a Masters in Web Design and New Media at the [Academy of Art University](http://www.academyart.edu/academics/web_design/graduate).
+ I'm a designer and developer with a passion for user experience design. In 2015, I graduated with a Masters in Web Design and New Media at the [Academy of Art University](http://www.academyart.edu/academics/web_design/graduate).
  
  My experience ranges from web and print design to interaction and front-end development. I’m always advocating for the user: balancing aesthetics with technology and delight with usability.
  

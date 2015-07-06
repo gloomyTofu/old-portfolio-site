@@ -24,7 +24,7 @@ a.cp-logo {
 	overflow: hidden;
 	cursor: pointer;
 	background-color: $grey-color-dark;
-	@include transition(background-color 0.15s $timing-function);
+	@extend %button-transition;
 	&:hover, &:focus {
 		background-color: lighten($grey-color-dark,25);
 	}
@@ -43,6 +43,12 @@ a.cp-logo {
 #cp-logo {
 	&:hover, &:focus {
 		@include animation(heart-beat 0.5s alternate-reverse $ease-out-circ infinite);
+	}
+}
+
+#js-navigation-menu {
+	@include media($tablet-plus) {
+		position:relative; 
 	}
 }
 
@@ -95,24 +101,27 @@ ul.sticky-navigation-menu li {
 	
 	@include media($desktop){
 		display:inline;
+		text-align:center; 
+		width: rem(100);
 	}
 }
 
 ul.sticky-navigation-menu a {
 	text-decoration:none; 
 	@include transition(border-bottom 0.3s $timing-function);
-	border-bottom: 3px solid transparent;
+	border-bottom: 4px solid transparent;
 	
 	@include media($mobile-tablet){
 		color:#fff;
 	}
 	@include media($desktop){
 		color:$grey-color-dark;
+		padding:0 $space-xsmall 5px;
 	}
 }
 
 ul.sticky-navigation-menu a {
-	&:hover, &:focus {
+	&:hover, &:focus, &.nav-active {
 		@include media($mobile-tablet){
 			border-color: #fff;
 		}
@@ -121,3 +130,14 @@ ul.sticky-navigation-menu a {
 		}
 	}
 }
+
+/*ul.sticky-navigation-menu #underline {
+	@include media($desktop){
+		height: rem(4);
+		width: rem(85);
+		background: $primary-color;
+		position:absolute;
+		bottom: -12px;
+		left: 0;
+	}
+}*/

@@ -1,0 +1,46 @@
+.icon {
+	width: rem(30);
+	height: rem(30);
+	display: block;
+	vertical-align: middle;
+	cursor: pointer;
+	&.icon-button {
+			width: rem(60);
+			height: rem(60);
+			@extend %button-transition;
+		svg {
+			fill: none;
+			stroke: $grey-color-dark;
+			stroke-width: 1;
+		}
+		&:hover, &:focus {
+			svg {
+				fill: $primary-color; 
+			}
+		}
+	}
+	svg {
+		stroke-width: 2;
+	}
+}
+
+.social-icon {
+	width: rem(40);
+	height: rem(40);
+	svg {
+		fill: $grey-color-light;
+		&:hover, &:focus {
+			fill: $primary-color;
+		}
+	}
+}
+
+.close-modal {
+	position:fixed; 
+	top: 0;
+	right: 0;
+	margin: $space-xsmall; 
+	i.close-icon {
+
+	}
+}

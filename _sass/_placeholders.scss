@@ -7,3 +7,7 @@
 %transition {
 	@include transition(all 0.5s $timing-function);
 }
+
+%button-transition {
+	@include transition(background-color 0.15s $timing-function);
+}

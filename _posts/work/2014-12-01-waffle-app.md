@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 'Waffle App'
+title: 'Waffle Style'
 class: 'tile2 medium-tile'
 folder: 'waffle-app'
 excerpt: 'Concept iPad App'
@@ -30,14 +30,16 @@ info:
 
 ---
 
-## CUPCAKE IPSUM
+## INTERACTIVE COOKBOOK
 
-Topping cupcake jujubes croissant tart dessert sweet chocolate cake brownie. Sugar plum sugar plum danish gummi bears. Tart bonbon caramels carrot cake jelly-o. Fruitcake brownie oat cake cake.
+A concept HTML5 web app that showcases different styles of waffles from around the world. The goal is to inform, entertain, and delight users. Waffle Style will be an interactive cookbook and guide to waffles. A fun new way to highlight different cultural interpretations of the classic waffle.
 
 <div class="screenshot-container">
 	<img src="/assets/images/work/{{page.folder}}/preview.jpg 1x" srcset="/assets/images/work/{{page.folder}}/preview@2x.jpg 2x" alt="Wireframe" />
 </div>
 
-Halvah chocolate marzipan sesame snaps sweet tiramisu biscuit gingerbread. Tiramisu oat cake pastry croissant liquorice chupa chups. Biscuit gingerbread wafer topping dragée pastry croissant pastry. Pudding caramels sesame snaps cupcake jelly candy canes halvah apple pie.
+## PROBLEM
 
-Jelly lollipop topping cotton candy gummies bear claw. Sweet macaroon croissant cheesecake liquorice pastry jelly-o cupcake. Dragée bear claw topping jelly lemon drops pudding biscuit. Ice cream tart gingerbread macaroon.
+Waffle Style is unlike anything currently available on the market. We are all familiar with traditional breakfast waffles. But, did you know there are a variety of different styles made all over the world?
+
+The app will be a responsive web application designed for a range of screen sizes. The main focus of the app will be the game section. Each level serves as lessons on how to prepare the waffle.

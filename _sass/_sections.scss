@@ -34,7 +34,18 @@
 				@include shift(2);
 			}
 		}
+		.post-section-wrap {
+			header {
+				h1 {
+					font-size: rem(35);
+				}
+			}
+		}
 	} 
+}
+
+section.page-section {
+	min-height: 100vh;  
 }
 
 .section-wrap {
@@ -51,6 +62,9 @@
 	}
 	&.small-space {
 		padding: rem($space) 0;
+		@include media($mobile) {
+			padding: rem($space-small) 0;
+		}
 	}
 	&.xsmall-space {
 		padding: rem($space-small) 0;
@@ -71,6 +85,9 @@
 		margin-bottom: $space-small;
 		.article-wrap {
 			overflow:hidden;
+			figure {
+				background-color: #e8e8e8; 
+			}
 			img {
 				width:100%; 
 			}

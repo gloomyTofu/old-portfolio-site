@@ -47,3 +47,14 @@ figure {
 		}
 	}
 }
+
+.project-details {
+	@extend %transition;
+	float:left; 
+	display: none; 
+}
+
+.project-list {
+	clear: both; 
+}
+	

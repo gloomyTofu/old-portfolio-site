@@ -1,22 +1,37 @@
+//http://tympanus.net/Development/CreativeButtons/
+
 .button {
 	padding: rem(10) $space-xsmall; 
 	background-color: $grey-color-light;
 	color: $grey-color-dark;
 	border: $cp-border;
-	box-shadow: 0 1px $grey-color; 
+	cursor:pointer; 
 	font-size: $medium-font-size;
 	font-weight: 400;
 	text-decoration: none;
-	@include transition(all 0.1s ease-in-out);
+	display: inline-block; 
+	outline: none; 
+	position: relative; 
+	box-shadow: 0 2px lighten($grey-color-dark,25%); 
+	@include transition(none);
+	&:after {
+		content: '';
+		position:absolute;
+		z-index: -1;
+		@include transition(all 0.3s);
+	}
 	&:hover, &:focus {
+		color: #fff; 
 		background-color: $grey-color;
+		box-shadow: 0 1px $grey-color-dark;
+		top: 1px;
 	}
 	&:active {
-		box-shadow: 0 0 $grey-color;
-		@include transform(translateY(1px))
+		box-shadow: 0 0 $grey-color-dark;
+		top: 2px;
 	}
 	&:last-child {
-		margin-left: $space-xsmall; 
+		margin-left: rem(10); 
 	}
 	&.primary-button {
 		color: $grey-color-dark;
@@ -25,6 +40,10 @@
 			color: #fff; 
 			background-color: $primary-color-dark;
 		}
+	}
+	&:visited {
+		color: $grey-color-dark;
+		border: 1px dashed $grey-color-dark; 
 	}
 }
 
