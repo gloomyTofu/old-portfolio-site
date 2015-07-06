@@ -7,14 +7,14 @@ $(document).ready(function(){
 		$('.sticky-navigation').toggleClass('open','');
 	});
 	
-	$('.hide').on('click', function(e){
+	$('.hide, ul.sticky-navigation-menu a').on('click', function(e){
 		e.preventDefault();
-		$(this).toggleClass('active','');
+		$('#js-navigation-mobile-menu').toggleClass('active','');
 		$('.sticky-navigation').toggleClass('open','');
 	});
 	
-	$('#work .article-wrap a').on('click', function(){
-		event.preventDefault();
+	$('#work .article-wrap a').on('click', function(e){
+		e.preventDefault();
 		var postURL = $(this).attr('data');
 		loadContent(postURL);
 		$('.project-details').show();
