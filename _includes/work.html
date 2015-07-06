@@ -19,8 +19,11 @@
 								<img src="/assets/images/work/{{work.folder}}/preview.jpg 1x" srcset="/assets/images/work/{{work.folder}}/preview@2x.jpg 2x" alt="{{ work.title }}" />
 								<figcaption class="overlay">
 									<div class="overlay-wrap">
+										<i class="icon check-icon">
+											Visited {% include icons/icon-check.html %}
+										</i>
 										<h2>{{ work.title }}</h2>
-										<p>{{ work.excerpt }}</p>
+										<p>{{ work.excerpt }}</p>  
 									</div>
 								</figcaption>
 							</figure>

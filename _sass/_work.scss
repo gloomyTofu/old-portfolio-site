@@ -29,6 +29,18 @@ figure {
 			@extend %margin-padding-reset;
 			padding-top: rem(10); 
 		}
+		i.icon {
+			&.check-icon {
+				display:none; 
+				svg {
+					fill: none; 
+					stroke: #fff;
+					width: rem(25);
+					height: rem(25);
+					display: inline; 
+				}
+			}
+		}
 	}
 	a {
 		text-decoration: none;
@@ -36,6 +48,68 @@ figure {
 			.overlay {
 				@include slide-in-end();
 			}
+		}
+		&:visited {
+			.overlay {
+				i.icon {
+					&.check-icon {
+						display: inline;
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+.article-tiles { 
+	article {
+		margin-bottom: $space-small;
+		.article-wrap {
+			overflow:hidden;
+			figure {
+				background-color: #e8e8e8; 
+			}
+			img {
+				width:100%; 
+			}
+		}
+		
+		&.medium-tile {
+			@include media($tablet-plus) {
+				@include span-columns(4 of 8);
+			}
+		}
+		&.small-tile {
+			.article-wrap {
+				img {
+					@include media($desktop) {
+						width: auto;
+						height: rem(200);
+					}
+				}
+			}
+			@include media($tablet) {
+				@include span-columns(4 of 8);
+			}
+			@include media($desktop) {
+				@include span-columns(3 of 10);
+			}
+		}
+		&.tile4 {
+			@include media($tablet) {
+				@include omega();
+			}
+			&.small-tile {
+				@include media($desktop) {
+					@include span-columns(4 of 10);
+				}
+			}
+		}
+		&.tile2 { @include omega(); }
+		&.tile {
+			border: $cp-border-2;
+			background-color: $background-color-grey;
 		}
 	}
 }
@@ -51,7 +125,8 @@ figure {
 .project-details {
 	@extend %transition;
 	float:left; 
-	display: none; 
+	display: none;
+	@include fill-parent;
 }
 
 .project-list {
