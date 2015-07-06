@@ -1,0 +1,24 @@
+#contact {
+	form {
+		@include media($mobile) {
+			margin-top: $space-small; 
+		}
+	}
+	input, textarea {
+		border: $cp-border-2;
+		margin-bottom: $space-xsmall;
+		padding: 0.75rem; 
+		width: 100%; 
+		@include media($desktop) {
+			width: 75%; 
+			max-width: rem(768); 
+		}
+	}
+	.submit-wrap {
+		input.button {
+			width: initial;
+			font-size: $large-font-size;
+			padding: 10px $space-small;
+		}
+	}
+}

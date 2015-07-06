@@ -5,7 +5,7 @@
 			<ul class="social-media-list">
 				{% if site.twitter_username %}
 				<li>
-					<a href="https://twitter.com/{{ site.twitter_username}}" title="Twitter">
+					<a href="https://twitter.com/{{ site.twitter_username}}" title="Twitter" target="_blank">
 						<i class="icon social-icon icon-twitter">
 							{% include icons/social-twitter.html %}
 						</i>
@@ -14,7 +14,7 @@
 				</li>
 				{% endif %}
 				<li>
-					<a href="https://www.linkedin.com/pub/carie-phon/42/75b/a53" title="LinkedIn">
+					<a href="https://www.linkedin.com/pub/carie-phon/42/75b/a53" title="LinkedIn" target="_blank">
 						<i class="icon social-icon icon-linkedin">
 							{% include icons/social-linkedin.html %}
 						</i>
@@ -22,7 +22,7 @@
 				</li>
 				{% if site.github_username %}
 				<li>
-					<a href="https://github.com/{{ site.github_username }}" title="Github">
+					<a href="https://github.com/{{ site.github_username }}" title="Github" target="_blank">
 						<i class="icon social-icon icon-github">
 							{% include icons/social-github.html %}
 						</i>
@@ -31,7 +31,7 @@
 				</li>
 				{% endif %}
 				<li>
-					<a href="mailto:{{ site.email }}" title="Email">
+					<a href="mailto:{{ site.email }}" title="Email" target="_blank">
 						<i class="icon social-icon icon-email">
 							{% include icons/social-email.html %}
 						</i>

@@ -5,6 +5,26 @@
 		</h1>
 	</header>
 	<div class="section-wrap small-space">
+		<form method="POST" action="//formspree.io/{{ site.data.settings.email }}">
+  
+		<fieldset class="contact-info-group">
 
+			<input type="text" placeholder="Name" name="name" required>
+
+			<input type="email" placeholder="Email" name="_replyto" required>
+			
+			<input type="text" placeholder="Subject" name="_subject" required>
+
+		</fieldset>
+
+		<textarea placeholder="Message" name="message" required></textarea>
+			
+		<input type="text" name="_gotcha" style="display:none" />
+			
+		<fieldset class="submit-wrap">
+			<input class="button" type="submit" value="Send">
+		</fieldset>
+
+	</form>	
 	</div>
 </section>

@@ -11,6 +11,11 @@
 					}
 				}
 			}
+			.section-info {
+				@extend %margin-padding-reset;
+				padding: $space-xsmall 0;
+				clear: both; 
+			}
 		}
 		header {
 			background: url(../images/line.svg) no-repeat 0 50%;
@@ -45,7 +50,10 @@
 }
 
 section.page-section {
-	min-height: 100vh;  
+	min-height: 100vh; 
+	&#contact {
+		min-height: initial;
+	}
 }
 
 .section-wrap {
