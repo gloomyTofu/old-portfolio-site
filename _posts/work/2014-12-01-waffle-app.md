@@ -32,14 +32,14 @@ info:
 
 ## INTERACTIVE COOKBOOK
 
-A concept HTML5 web app that showcases different styles of waffles from around the world. The goal is to inform, entertain, and delight users. Waffle Style will be an interactive cookbook and guide to waffles. A fun new way to highlight different cultural interpretations of the classic waffle.
+A concept HTML5 web app that showcases different styles of waffles from around the world. The goal is to inform, entertain, and delight users. Waffle Style will be an interactive cookbook and guide to waffles. It's a fun new way to highlight different cultural interpretations of the classic waffle.
 
 <div class="screenshot-container">
-	<img src="/assets/images/work/{{page.folder}}/preview.jpg 1x" srcset="/assets/images/work/{{page.folder}}/preview@2x.jpg 2x" alt="Wireframe" />
+	<img src="/assets/images/work/{{page.folder}}/preview.jpg" srcset="/assets/images/work/{{page.folder}}/preview.jpg, /assets/images/work/{{page.folder}}/preview@2x.jpg" alt="Screenshot" />
 </div>
 
 ## PROBLEM
 
-Waffle Style is unlike anything currently available on the market. We are all familiar with traditional breakfast waffles. But, did you know there are a variety of different styles made all over the world?
+Waffle Style is unlike anything currently available on the market. We are all familiar with traditional breakfast waffles, but, did you know there are a variety of different styles made all over the world?
 
-The app will be a responsive web application designed for a range of screen sizes. The main focus of the app will be the game section. Each level serves as lessons on how to prepare the waffle.
+The app will be a responsive web application designed for a range of screen sizes. The main focus of the app will be the game section. Each level serves as lessons on how to properly prepare different styles of waffles.

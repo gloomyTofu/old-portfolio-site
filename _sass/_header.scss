@@ -2,7 +2,7 @@
 	padding: rem($space-large) 0 (rem($space-large) - rem($space));
 	background-color: $grey-color-light;
 	h1 {
-		font-size: rem(35); 
+		font-size: rem(30); 
 		@include media($tablet){
 			font-size: rem(45);
 		}

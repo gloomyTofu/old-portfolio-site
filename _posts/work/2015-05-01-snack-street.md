@@ -33,10 +33,10 @@ info:
 
 ## STREET FOOD GUIDE
 
-Snack Street was my Final Thesis project for my Masters in Web Design and New Media.
+Snack Street was my Final Thesis project before receiving my Masters in Web Design and New Media.
 
-There are plenty of travel, food, and review apps available like Yelp and TripAdvisor. Those apps are great to help users decide *where* to eat but rarely do we see a guide about *what* to eat. The Snack Street app identifies local, authentic dishes specific to a country of region. No more wondering what a dish is and whether its safe to eat. Snack Street will provide all the information travelers need. Allowing users to spend more time enjoying their trip and less time researching.
+There are plenty of travel, food, and review apps available like Yelp and TripAdvisor. Those apps are great to help users decide *where* to eat but rarely do we see a guide about *what* to eat. The Snack Street app identifies local, authentic dishes specific to a country of region. No more wondering what a dish is and whether its safe to eat. Snack Street will provide all the information travelers need, allowing users to spend more time enjoying their trip and less time researching.
 
 <div class="screenshot-container">
-	<img src="/assets/images/work/{{page.folder}}/preview.jpg 1x" srcset="/assets/images/work/{{page.folder}}/preview@2x.jpg 2x" alt="Wireframe" />
+	<img src="/assets/images/work/{{page.folder}}/preview.jpg" srcset="/assets/images/work/{{page.folder}}/preview.jpg, /assets/images/work/{{page.folder}}/preview@2x.jpg" alt="Screenshots" />
 </div>
