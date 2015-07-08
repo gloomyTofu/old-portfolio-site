@@ -1,3 +1,3 @@
 # cariephon
 
-[Portfolio Site](http://cariephon.com/)
+[Portfolio Site](http://cariephon.com/) using Jekyll
