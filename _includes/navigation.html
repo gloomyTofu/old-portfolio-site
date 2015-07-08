@@ -1,6 +1,7 @@
-<!--<div id="underline"></div>-->
-{% for menu in site.data.settings.menu %}
-<li>
-	<a href="{{ menu.url }}">{{ menu.name }}</a>
-</li>
-{% endfor %}
+<ul id="js-navigation-menu" class="sticky-navigation-menu">
+	{% for menu in site.data.settings.menu %}
+	<li>
+		<a href="{{ menu.url }}">{{ menu.name }}</a>
+	</li>
+	{% endfor %}
+</ul>

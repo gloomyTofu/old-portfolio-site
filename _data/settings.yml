@@ -6,9 +6,9 @@ email: hello@cariephon.com
 
 # Menu 
 menu:
+- {name: Skills, url: '#skills'}
 - {name: Work, url: '#work'}
 - {name: About, url: '#about'}
-#- {name: Skills, url: '#skills'}
 - {name: Resume, url: '#resume'}
 #- {name: Notes, url: '#notes'}
 - {name: Contact, url: '#contact'}
@@ -24,9 +24,9 @@ projects:
 
 # About Me
 bio: |	
- I'm a designer and developer with a passion for user experience design. In 2015, I graduated with a Masters in Web Design and New Media at the [Academy of Art University](http://www.academyart.edu/academics/web_design/graduate).
+ I'm a designer and developer with a passion for interaction design. In 2015, I graduated with a Masters in Web Design and New Media at the [Academy of Art University](http://www.academyart.edu/academics/web_design/graduate).
  
- My experience ranges from web and print design to interaction and front-end development. I’m always advocating for the user: balancing aesthetics with technology and delight with usability.
+ My experience ranges from web and print design to user interface and front-end development. I’m always advocating for the user: balancing aesthetics with technology and delight with usability.
  
  When I’m not desiging or coding, you’ll find me exploring new places to eat, watching MasterChef, sketching, and playing with my dog Tofu.
 
