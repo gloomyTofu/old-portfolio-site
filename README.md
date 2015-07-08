@@ -1,11 +1,3 @@
 # cariephon
 
-Personal Site
-
-### sections (coming soon)
-
-  * Portfolio
-  * About
-  * Resume
-  * Contact
-  
+[Portfolio Site](http://cariephon.com/)
