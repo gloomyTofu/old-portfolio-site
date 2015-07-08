@@ -1,3 +1,3 @@
-# cariephon
+# Carie Phon
 
-[Portfolio Site](http://cariephon.com/) using Jekyll
+My [Portfolio](http://cariephon.com/) site using Jekyll
