@@ -44,7 +44,7 @@ $header-image-height: 500px;
 	p.project-info {
 		clear: both; 
 		margin-top: 0; 
-		padding-top: 0; 
+		padding-top: rem(3); 
 	}
 	.section-wrap.small-space {
 		padding-bottom: $space;

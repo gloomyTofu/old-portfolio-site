@@ -50,8 +50,10 @@
 .button-group {
 	@include clearfix;
 	text-align: center; 
-	@include media($desktop){
-		text-align: right; 
+	&.right {
+		@include media($desktop){
+			text-align: right; 
+		}
 	}
 	@include margin(null null ($space + $space-small) null);
 }

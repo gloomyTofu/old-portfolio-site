@@ -7,7 +7,7 @@ $(document).ready(function(){
 		$('.sticky-navigation').toggleClass('open','');
 	});
 	
-	$('.hide, ul.sticky-navigation-menu a').on('click', function(e){
+	$('.hide, #js-navigation-menu').on('click', function(e){
 		e.preventDefault();
 		$('#js-navigation-mobile-menu').toggleClass('active','');
 		$('.sticky-navigation').toggleClass('open','');
@@ -20,14 +20,17 @@ $(document).ready(function(){
 		$('.project-details').show();
 	});
 	
-	$('.modal-overlay, .modal-close').on('click', function() {
-		$('.main-content.modal-open').removeClass('modal-open');
-	});
+	if ($(window).width() < 1200) {
+		$('.modal-effect').addClass('modal-show');
+	}
 	
+	$('.modal-overlay, .close-modal').on('click', function() {
+		$('.modal-effect.modal-show').removeClass('modal-show');
+	});
+
 	$('.modal-wrap').on('click', function(e) {
 		e.stopPropagation();
 	});
-	
 });
 
 // smoothScroll function is applied from the document ready function
@@ -45,8 +48,14 @@ function smoothScroll (duration) {
 	});
 }
 
+function loadContent(href){
+	$('#project').load(href + ' #work-details');
+	$('.post-section-wrap h1').load(href + ' span.section-header');
+	$('p.project-info').load(href + ' .subhead span');
+};
+
 //http://callmenick.com/post/single-page-site-with-smooth-scrolling-highlighted-link-and-fixed-navigation
-var aChildren = $('ul.sticky-navigation-menu li').children();
+var aChildren = $('ul#js-navigation-menu li').children();
 var aArray = [];
 for (var i=0; i < aChildren.length; i++) {
 	var aChild = aChildren[i];
@@ -64,21 +73,17 @@ $(window).scroll(function(){
 		var sectionPos = $(theID).offset().top;
 		var sectionHeight = $(theID).height();
 		if (windowPos >= sectionPos && windowPos < (sectionPos + sectionHeight)){
-			$("a[href='" + theID + "']").addClass('nav-active');
+			$("a[href='" + theID + "']").addClass('tile-active');
 		} else {
-			$("a[href='" + theID + "']").removeClass('nav-active');
+			$("a[href='" + theID + "']").removeClass('tile-active');
 		}
 	}
 	
 	if(windowPos + windowHeight == sectionHeight) {
-		if(!$('ul.sticky-navigation-menu li:last-child a').hasClass('nav-active')){
-			var navActiveCurrent = $('.nav-active').attr('href');
-			$("a[href='" + navActiveCurrent + "']").removeClass('nav-active');
-			$('ul.sticky-navigation-menu li:last-child a').addClass('nav-active');
+		if(!$('ul#js-navigation-menu li:last-child a').hasClass('tile-active')){
+			var navActiveCurrent = $('.tile-active').attr('href');
+			$("a[href='" + navActiveCurrent + "']").removeClass('tile-active');
+			$('ul#js-navigation-menu li:last-child a').addClass('tile-active');
 		}
 	}
 });
-
-function loadContent(href){
-	$('#project').load(href + ' .post-section-wrap');
-};

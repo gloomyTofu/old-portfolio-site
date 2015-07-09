@@ -12,6 +12,5 @@ $mobile-tablet: new-breakpoint(max-width $tablet-width 4);
 
 $tablet: new-breakpoint(min-width ($mobile-width + $plus-one) max-width $tablet-width 8);
 $tablet-plus: new-breakpoint(min-width ($mobile-width + $plus-one) 8);
-
 $desktop: new-breakpoint(min-width ($tablet-width + $plus-one));
 $desktop-plus: new-breakpoint(min-width ($desktop-width + $plus-one));

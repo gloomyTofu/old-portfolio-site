@@ -1,35 +1,30 @@
 ---
-layout: default
+layout: demo
 ---
 
 <div class="header-container post">
 	<header class="wrapper center clearfix">
-		<h1>{{ page.title }}</h1>
-		<p class="subhead">{{ page.description }}</p>
+		<h1>
+			<span class="section-header">{{ page.title }}</span>
+		</h1>
+		<p class="subhead"><span>{{ page.description }}</span></p>
 	</header>
 </div>
 
 <div class="main-container">
   <main class="main center clearfix">
 		<section class="post-section" id="post-section">
-			<div class="post-section-wrap">
-				<header>
-					<h1>
-						<span class="section-header">{{ page.title }}</span>
-					</h1>
-					<p class="project-info">{{ page.description }}</p>
-				</header>
-				<div class="section-wrap small-space">
+				<div class="section-wrap small-space" id="work-details">
 					<div class="featured-image">
 						<div class="image-container">
 							{% if page.video %}
-							<iframe src="{{page.video}}" width="800" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							<iframe src="{{page.video}}" width="800" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="{{ page.title }} Video"></iframe>
 							{% elsif page.image.full %}
 								<img src="/assets/images/work/{{page.folder}}/full-image.jpg" srcset="/assets/images/work/{{page.folder}}/full-image.jpg, /assets/images/work/{{page.folder}}/full-image@2x.jpg" alt="{{ page.title }}" />
 							{% endif %}
 						</div>
 						{% if page.launch %}
-						<div class="button-group">
+						<div class="button-group right">
 							<a href="{{ page.launch.url }}" class="button primary-button" target="_blank">
 								{{ page.launch.title }}
 							</a>
@@ -76,9 +71,8 @@ layout: default
 						</div>
 					</div>
 				</div>
-			</div>
+			<!--</div>-->
 		</section>
-		
 	</main>
 </div>
 

@@ -6,6 +6,7 @@ folder: 'cdk-templates'
 excerpt: 'Optimized Workflow'
 description: 'Optimized Workflow'
 category: work
+background: e4dfd5
 image:
  full: full-image.jpg
  preview: preview.jpg
@@ -17,11 +18,10 @@ info:
   description: HTML, CSS
  group2: 
   title: Team
-  description: Worked with Designers and Developers
+  description: 'Worked with Designers and Developers'
  group3: 
   title: Role
-  description: UI Design, Front-End Development
-background: #e4dfd5
+  description: 'UI Design, Front-End Development'
 
 ---
 

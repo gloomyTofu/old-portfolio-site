@@ -1,0 +1,65 @@
+.demo-container {
+	background-color: $background-color-grey;
+	padding-bottom: $space;
+}
+
+svg#iphone-demo {
+	width: rem(320);
+	@include media($mobile) {
+		display: none; 
+	}
+}
+
+svg#ipad-demo {
+	width: rem(1269);
+}
+
+iframe.device-container {
+	position: absolute;
+	border: 2px solid $grey-color; 
+	cursor: pointer;
+}
+
+.iphone-device {
+	position: relative; 
+	width: rem(320);
+	height: rem(641);
+	margin: 0 auto $space;
+	
+	@include media($mobile){
+		width: 100%; 
+		height: inherit; 
+	}
+	iframe.device-container {
+		width: 283px;
+  	height: 500px;
+		top:68px; 
+		left: 18px;
+		@include media($mobile){
+			position: relative;
+			width: 100%; 
+			height: rem(650);
+			top: 0;
+			left: 0; 
+		}
+	}
+}
+
+iframe.device-container {
+	position: absolute;
+	border: 2px solid $grey-color; 
+	cursor: pointer;
+}
+
+.ipad-device {
+	margin: 0 auto $space;
+	position: relative; 
+	width: rem(1267);
+	height: rem(993);
+	iframe.device-container {
+		width: 1024px;
+		height: 768px;
+		top: 113px;
+		left: 126px; 
+	}
+}

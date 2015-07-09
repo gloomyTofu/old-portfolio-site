@@ -6,13 +6,14 @@ folder: 'waffle-app'
 excerpt: 'Concept iPad App'
 description: 'Concept HTML5 iPad Game'
 category: work
+background: e4dfd5
 image:
  full: full-image.jpg
  preview: preview.jpg
  thumb: thumb.jpg
 launch: 
  title: Launch
- url: http://cariephon.com/wafflestyle/
+ url: '/demo/2014/12/01/waffle-app/'
 github: 
  title: View on GitHub
  url: https://github.com/gloomyTofu/waffle
@@ -26,7 +27,7 @@ info:
   description: Foundation Framework, InVision, Proto.io
  group3: 
   title: Role
-  description: User Research, UI/UX Design, User Testing, IxD Design
+  description: 'User Research, UI/UX Design, User Testing, IxD Design'
 
 ---
 

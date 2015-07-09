@@ -1,18 +1,22 @@
 ---
 layout: article
-title: 'Meditation'
+title: 'Mindfulness'
 class: 'tile3 small-tile'
 folder: 'meditation'
 excerpt: 'jQuery Mobile App'
 description: 'Concept Meditation App'
 category: work
+background: e4dfd5
 image:
  full: full-image.jpg
  preview: preview.jpg
  thumb: thumb.jpg
 launch: 
  title: Launch
- url: http://cariephon.com/aau/wnm617/mindfulness/
+ url: '/demo/2014/11/30/meditation/'
+github: 
+ title: View on GitHub
+ url: https://github.com/gloomyTofu/mindfulness
 info:
  title: Technology
  group: 
@@ -23,8 +27,7 @@ info:
   description: Illustrator, Photoshop, Brackets
  group3: 
   title: Role
-  description: User Research, UI/UX Design, User Testing, Front-End Development
-background: #13ab6a
+  description: 'User Research, UI/UX Design, User Testing, Front-End Development'
 
 ---
 

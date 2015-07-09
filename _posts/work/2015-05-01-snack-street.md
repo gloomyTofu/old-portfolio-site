@@ -6,6 +6,7 @@ folder: 'snack-street'
 excerpt: 'Concept Mobile App'
 description: 'Thesis Project: Travel Food App'
 category: work
+background: 007fc6
 image:
  full: full-image.jpg
  preview: preview.jpg
@@ -13,7 +14,7 @@ image:
 video: https://player.vimeo.com/video/126863365?byline=0&portrait=0
 launch: 
  title: Launch
- url: http://eatstreetsnacks.com/app/#/app/guides
+ url: '/demo/2015/05/01/snack-street/'
 github: 
  title: View on GitHub
  url: https://github.com/gloomyTofu/SnackStreet
@@ -27,7 +28,7 @@ info:
   description: Ionic (AngularJS + Cordova)
  group3: 
   title: Role
-  description: User Research, UI/UX Design, User Testing, IxD Design, Front-End Development
+  description: 'User Research, UI/UX Design, User Testing, IxD Design, Front-End Development'
 
 ---
 

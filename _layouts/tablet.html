@@ -13,11 +13,12 @@ layout: demo
 	<div class="main-container">
 		<main class="main center clearfix">
 			<section class="post-section" id="{{ page.folder }}-demo">
-				<div class="section-wrap xsmall-space center">
-					<div class="iphone-device">
-						{% include icons/iphone-demo.html %}
+				<div class="xsmall-space center">
+					<div class="ipad-device">
+						{% include icons/ipad-demo.html %}
 						<iframe class="device-container" src="{{ page.project }}"></iframe>
 					</div>
+					
 					{% if page.details %}
 					<div class="button-group right">
 						<a href="{{ page.details.url }}" class="button primary-button">
@@ -36,4 +37,6 @@ layout: demo
 	</div>
 
 </div>
+
+{% include modal.html %}
 
