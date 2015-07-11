@@ -10,6 +10,6 @@ github:
  title: View on GitHub
  url: https://github.com/gloomyTofu/SnackStreet
 category: demo
-project: 'http://cariephon.com/eatstreetsnacks/app/'
+project: 'http://cariephon.com/eatstreetsnacks/'
 
 ---
