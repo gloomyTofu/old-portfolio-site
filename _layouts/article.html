@@ -14,7 +14,7 @@ layout: demo
 <div class="main-container">
   <main class="main center clearfix">
 		<section class="post-section" id="post-section">
-				<div class="section-wrap small-space" id="work-details">
+				<div class="section-wrap small-space" id="post-details">
 					<div class="featured-image">
 						<div class="image-container">
 							{% if page.video %}
@@ -25,8 +25,13 @@ layout: demo
 						</div>
 						{% if page.launch %}
 						<div class="button-group right">
-							<a href="{{ page.launch.url }}" class="button primary-button" target="_blank">
+							<a href="{{ page.launch.url }}" class="button primary-button desktop" target="_blank">
 								{{ page.launch.title }}
+							</a>
+							{% endif %}
+							{% if page.mobile %}
+							<a href="{{ page.mobile.url }}" class="button primary-button mobile" target="_blank">
+								{{ page.mobile.title }}
 							</a>
 							{% endif %}
 							{% if page.github %}
@@ -71,8 +76,9 @@ layout: demo
 						</div>
 					</div>
 				</div>
-			<!--</div>-->
 		</section>
+		
+		{% include work.html %}
 	</main>
 </div>
 

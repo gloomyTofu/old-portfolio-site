@@ -31,6 +31,10 @@ $header-image-height: 500px;
 		img {
 			width: 100%; 
 		}
+		&.no-border {
+			border: none;
+			background-color: transparent;
+		}
 	} 
 }
 
@@ -59,7 +63,7 @@ $header-image-height: 500px;
 			@include span-columns(9);
 			padding-right: $space-small;
 		}
-		p {
+		p, ul, ol {
 			@include margin($space-small 0 $space-small 0);
 		}
 	}

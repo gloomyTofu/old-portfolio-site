@@ -1,14 +1,4 @@
 <section class="page-section" id="work">
-	<div class="project-details">
-		<div class="post-section-wrap">
-			<header>
-				<h1></h1>
-			</header>
-			<p class="project-info"></p>
-			<div id="project"></div>
-		</div>
-	</div>
-	
 	<div class="project-list">
 		<header>
 			<h1>
@@ -20,9 +10,9 @@
 				{% for work in site.categories.work %}
 					<article data-folder="{{ work.folder }}" class="tile {{ work.class }}">
 						<div class="article-wrap">
-						<a href="#work" data="{{ work.url }}">
+						<a href="{{ work.url }}" data="{{ work.url }}">
 							<figure style="background-color:#{{ work.background }};">
-								<img src="/assets/images/work/{{work.folder}}/thumb.jpg" srcset="/assets/images/work/{{work.folder}}/thumb.jpg, /assets/images/work/{{work.folder}}/thumb@2x.jpg" alt="{{ work.title }}" />
+								<img srcset="/assets/images/work/{{work.folder}}/thumb@2x.jpg 1089w, /assets/images/work/{{work.folder}}/thumb.jpg 768w" src="/assets/images/work/{{work.folder}}/thumb.jpg" alt="{{ work.title }}" />
 								<figcaption class="overlay">
 									<div class="overlay-wrap">
 										<i class="icon check-icon">

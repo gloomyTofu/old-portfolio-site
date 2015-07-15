@@ -40,6 +40,17 @@
 			color: #fff; 
 			background-color: $primary-color-dark;
 		}
+		&.desktop {
+			@include media($mobile){
+				display: none; 
+			}
+		}
+		&.mobile {
+			display: none;
+			@include media($mobile){
+				display: inline-block; 
+			}
+		}
 	}
 	&:visited {
 		color: $grey-color-dark;
@@ -54,6 +65,9 @@
 		@include media($desktop){
 			text-align: right; 
 		}
+	}
+	&.left {
+		text-align: left; 
 	}
 	@include margin(null null ($space + $space-small) null);
 }

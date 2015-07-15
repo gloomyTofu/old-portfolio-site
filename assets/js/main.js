@@ -13,7 +13,7 @@ $(document).ready(function(){
 		$('.sticky-navigation').toggleClass('open','');
 	});
 	
-	$('#work .article-wrap a').on('click', function(e){
+	$('#notes .article-wrap a').on('click', function(e){
 		e.preventDefault();
 		var postURL = $(this).attr('data');
 		loadContent(postURL);
@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 // smoothScroll function is applied from the document ready function
 function smoothScroll (duration) {
-	$('a[href^="#"], #work .article-wrap a').on('click', function(event) {
+	$('a[href^="#"], #notes .article-wrap a').on('click', function(event) {
 
 	    var target = $( $(this).attr('href') );
 
@@ -49,7 +49,7 @@ function smoothScroll (duration) {
 }
 
 function loadContent(href){
-	$('#project').load(href + ' #work-details');
+	$('#project').load(href + ' #post-details');
 	$('.post-section-wrap h1').load(href + ' span.section-header');
 	$('p.project-info').load(href + ' .subhead span');
 };

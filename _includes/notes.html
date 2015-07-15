@@ -1,12 +1,47 @@
 {% if site.data.settings.notes %}
 <section class="page-section" id="notes">
-	<header>
-		<h1>
-			<span class="section-header">Notes</span>
-		</h1>
-	</header>
-	<div class="section-wrap small-space">
-
+	<div class="project-details">
+		<div class="post-section-wrap">
+			<header>
+				<h1></h1>
+			</header>
+			<p class="project-info"></p>
+			<div id="project"></div>
+		</div>
+	</div>
+	
+	<div class="project-list">
+		<header>
+			<h1>
+				<span class="section-header">Work</span>
+			</h1>
+		</header>
+		<div class="section-wrap small-space">
+			<div class="article-tiles">
+				{% for note in site.categories.notes %}
+					<article data-folder="{{ note.folder }}" class="tile {{ note.class }}">
+						<div class="article-wrap">
+						<a href="#note" data="{{ note.url }}">
+							<figure style="background-color:#{{ note.background }};">
+								<img srcset="/assets/images/work/{{note.folder}}/thumb@2x.jpg 1089w, /assets/images/note/{{note.folder}}/thumb.jpg 768w" src="/assets/images/note/{{note.folder}}/thumb.jpg" alt="{{ note.title }}" />
+								<figcaption class="overlay">
+									<div class="overlay-wrap">
+										<i class="icon check-icon">
+											Visited {% include icons/icon-check.html %}
+										</i>
+										<h2>{{ work.title }}</h2>
+										<p>{{ work.excerpt }}</p>  
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+						<div class="note-section" id="note-section">
+						</div>
+					</div>
+					</article>
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 </section>
 {% endif %}

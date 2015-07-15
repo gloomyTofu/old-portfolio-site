@@ -6,7 +6,7 @@ folder: 'waffle-app'
 excerpt: 'Concept iPad App'
 description: 'Concept HTML5 iPad Game'
 category: work
-background: e4dfd5
+background: e8e8e8
 image:
  full: full-image.jpg
  preview: preview.jpg
@@ -36,7 +36,7 @@ info:
 A concept HTML5 web app that showcases different styles of waffles from around the world. The goal is to inform, entertain, and delight users. Waffle Style will be an interactive cookbook and guide to waffles. It's a fun new way to highlight different cultural interpretations of the classic waffle.
 
 <div class="screenshot-container">
-	<img src="/assets/images/work/{{page.folder}}/preview.jpg" srcset="/assets/images/work/{{page.folder}}/preview.jpg, /assets/images/work/{{page.folder}}/preview@2x.jpg" alt="Screenshot" />
+	<img srcset="/assets/images/work/{{page.folder}}/preview@2x.jpg 1089w, /assets/images/work/{{page.folder}}/preview.jpg 768w" src="/assets/images/work/{{page.folder}}/preview.jpg" alt="Screenshot" />
 </div>
 
 ## PROBLEM

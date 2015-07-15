@@ -27,5 +27,5 @@ markdown: rdiscount
 permalink: pretty
 
 # How many articles do you wish to appear on the front page:
-# paginate: 3
+paginate: 3
 
