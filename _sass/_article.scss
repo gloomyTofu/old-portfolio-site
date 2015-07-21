@@ -66,6 +66,9 @@ $header-image-height: 500px;
 		p, ul, ol {
 			@include margin($space-small 0 $space-small 0);
 		}
+		h2 {
+			margin-top: $space; 
+		}
 	}
 	.two-col-secondary {
 		@include media($desktop) {

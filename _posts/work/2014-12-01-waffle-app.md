@@ -45,6 +45,12 @@ Waffle Style is unlike anything currently available on the market. We are all fa
 
 The main focus of the app will be the game section. Each level serves as lessons on how to properly prepare different styles of waffles. This will be a great form of advertising for various waffle vendors, while customers wait for their waffle order, they can make their own virtual waffle at the same time. 
 
+## RESEARCH
+
+<div class="screenshot-container no-border">
+	<img srcset="/assets/images/work/{{page.folder}}/research-1@2x.jpg 1089w, /assets/images/work/{{page.folder}}/research-1.jpg 768w" src="/assets/images/work/{{page.folder}}/research-1.jpg" alt="Research" />
+</div>
+
 ## MINDMAP
 
 <div class="screenshot-container no-border">
@@ -71,10 +77,32 @@ The main focus of the app will be the game section. Each level serves as lessons
 	<img srcset="/assets/images/work/{{page.folder}}/process-5@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-5.jpg 768w" src="/assets/images/work/{{page.folder}}/process-5.jpg" alt="Structure: Sitemap" />
 </div>
 
-## NAVIGATION
+## TASK FLOW
 
 <div class="screenshot-container no-border">
-	<img srcset="/assets/images/work/{{page.folder}}/process-6@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-6.jpg 768w" src="/assets/images/work/{{page.folder}}/process-6.jpg" alt="Structure: Navigation" />
+	<img srcset="/assets/images/work/{{page.folder}}/task-flow-1@2x.jpg 1089w, /assets/images/work/{{page.folder}}/task-flow-1.jpg 768w" src="/assets/images/work/{{page.folder}}/task-flow-1.jpg" alt="Task Flow 1" />
+</div>
+
+<div class="screenshot-container no-border">
+	<img srcset="/assets/images/work/{{page.folder}}/task-flow-2@2x.jpg 1089w, /assets/images/work/{{page.folder}}/task-flow-2.jpg 768w" src="/assets/images/work/{{page.folder}}/task-flow-2.jpg" alt="Task Flow 2" />
+</div>
+
+<div class="screenshot-container no-border">
+	<img srcset="/assets/images/work/{{page.folder}}/task-flow-3@2x.jpg 1089w, /assets/images/work/{{page.folder}}/task-flow-3.jpg 768w" src="/assets/images/work/{{page.folder}}/task-flow-3.jpg" alt="Task Flow 3" />
+</div>
+
+## PROOF OF CONCEPT
+
+<div class="screenshot-container no-border">
+	<img srcset="/assets/images/work/{{page.folder}}/wireframes-1@2x.jpg 1089w, /assets/images/work/{{page.folder}}/wireframes-1.jpg 768w" src="/assets/images/work/{{page.folder}}/wireframes-1.jpg" alt="Structure: Navigation" />
+</div>
+
+<div class="screenshot-container no-border">
+	<img srcset="/assets/images/work/{{page.folder}}/wireframes-2@2x.jpg 1089w, /assets/images/work/{{page.folder}}/wireframes-2.jpg 768w" src="/assets/images/work/{{page.folder}}/wireframes-2.jpg" alt="Structure: Navigation" />
+</div>
+
+<div class="screenshot-container no-border">
+	<img srcset="/assets/images/work/{{page.folder}}/wireframes-3@2x.jpg 1089w, /assets/images/work/{{page.folder}}/wireframes-3.jpg 768w" src="/assets/images/work/{{page.folder}}/pwireframes-3.jpg" alt="Structure: Navigation" />
 </div>
 
 ## LOGO DESIGN
@@ -99,48 +127,80 @@ The main focus of the app will be the game section. Each level serves as lessons
 	<img srcset="/assets/images/work/{{page.folder}}/process-10@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-10.jpg 768w" src="/assets/images/work/{{page.folder}}/process-10.jpg" alt="Design: Grid 2" />
 </div>
 
-## PROOF OF CONCEPT
+## MOCKUPS
 
 <div class="screenshot-container">
-	<img srcset="/assets/images/work/{{page.folder}}/process-11@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-11.jpg 768w" src="/assets/images/work/{{page.folder}}/process-11.jpg" alt="Proof of Concept" />
+	<img srcset="/assets/images/work/{{page.folder}}/process-11@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-11.jpg 768w" src="/assets/images/work/{{page.folder}}/process-11.jpg" alt="Waffle Mockups" />
 </div>
 
 <div class="screenshot-container">
-	<img srcset="/assets/images/work/{{page.folder}}/process-12@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-12.jpg 768w" src="/assets/images/work/{{page.folder}}/process-12.jpg" alt="Proof of Concept" />
+	<img srcset="/assets/images/work/{{page.folder}}/process-12@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-12.jpg 768w" src="/assets/images/work/{{page.folder}}/process-12.jpg" alt="Waffle Mockups" />
 </div>
 
 <div class="screenshot-container">
-	<img srcset="/assets/images/work/{{page.folder}}/process-13@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-13.jpg 768w" src="/assets/images/work/{{page.folder}}/process-13.jpg" alt="Proof of Concept" />
+	<img srcset="/assets/images/work/{{page.folder}}/process-13@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-13.jpg 768w" src="/assets/images/work/{{page.folder}}/process-13.jpg" alt="Waffle Mockups" />
 </div>
 
 <div class="screenshot-container">
-	<img srcset="/assets/images/work/{{page.folder}}/process-14@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-14.jpg 768w" src="/assets/images/work/{{page.folder}}/process-14.jpg" alt="Proof of Concept" />
+	<img srcset="/assets/images/work/{{page.folder}}/process-14@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-14.jpg 768w" src="/assets/images/work/{{page.folder}}/process-14.jpg" alt="Waffle Mockups" />
 </div>
 
 <div class="screenshot-container">
-	<img srcset="/assets/images/work/{{page.folder}}/process-15@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-15.jpg 768w" src="/assets/images/work/{{page.folder}}/process-15.jpg" alt="Proof of Concept" />
+	<img srcset="/assets/images/work/{{page.folder}}/process-15@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-15.jpg 768w" src="/assets/images/work/{{page.folder}}/process-15.jpg" alt="Waffle Mockups" />
 </div>
 
 <div class="screenshot-container">
-	<img srcset="/assets/images/work/{{page.folder}}/process-16@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-16.jpg 768w" src="/assets/images/work/{{page.folder}}/process-16.jpg" alt="Proof of Concept" />
+	<img srcset="/assets/images/work/{{page.folder}}/process-16@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-16.jpg 768w" src="/assets/images/work/{{page.folder}}/process-16.jpg" alt="Waffle Mockups" />
 </div>
 
 <div class="screenshot-container">
-	<img srcset="/assets/images/work/{{page.folder}}/process-17@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-17.jpg 768w" src="/assets/images/work/{{page.folder}}/process-17.jpg" alt="Proof of Concept" />
+	<img srcset="/assets/images/work/{{page.folder}}/process-17@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-17.jpg 768w" src="/assets/images/work/{{page.folder}}/process-17.jpg" alt="Waffle Mockups" />
 </div>
 
 <div class="screenshot-container">
-	<img srcset="/assets/images/work/{{page.folder}}/process-18@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-18.jpg 768w" src="/assets/images/work/{{page.folder}}/process-18.jpg" alt="Proof of Concept" />
+	<img srcset="/assets/images/work/{{page.folder}}/process-18@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-18.jpg 768w" src="/assets/images/work/{{page.folder}}/process-18.jpg" alt="Waffle Mockups" />
 </div>
 
 <div class="screenshot-container">
-	<img srcset="/assets/images/work/{{page.folder}}/process-19@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-19.jpg 768w" src="/assets/images/work/{{page.folder}}/process-19.jpg" alt="Proof of Concept" />
+	<img srcset="/assets/images/work/{{page.folder}}/process-19@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-19.jpg 768w" src="/assets/images/work/{{page.folder}}/process-19.jpg" alt="Waffle Mockups" />
 </div>
 
 <div class="screenshot-container">
-	<img srcset="/assets/images/work/{{page.folder}}/process-20@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-20.jpg 768w" src="/assets/images/work/{{page.folder}}/process-20.jpg" alt="Proof of Concept" />
+	<img srcset="/assets/images/work/{{page.folder}}/process-20@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-20.jpg 768w" src="/assets/images/work/{{page.folder}}/process-20.jpg" alt="Waffle Mockups" />
 </div>
 
 <div class="screenshot-container">
-	<img srcset="/assets/images/work/{{page.folder}}/process-21@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-21.jpg 768w" src="/assets/images/work/{{page.folder}}/process-21.jpg" alt="Proof of Concept" />
+	<img srcset="/assets/images/work/{{page.folder}}/process-21@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-21.jpg 768w" src="/assets/images/work/{{page.folder}}/process-21.jpg" alt="Waffle Mockups" />
+</div>
+
+<div class="screenshot-container">
+	<img srcset="/assets/images/work/{{page.folder}}/process-23@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-23.jpg 768w" src="/assets/images/work/{{page.folder}}/process-23.jpg" alt="Waffle Mockups" />
+</div>
+
+<div class="screenshot-container">
+	<img srcset="/assets/images/work/{{page.folder}}/process-22@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-22.jpg 768w" src="/assets/images/work/{{page.folder}}/process-22.jpg" alt="Waffle Mockups" />
+</div>
+
+<div class="screenshot-container">
+	<img srcset="/assets/images/work/{{page.folder}}/process-24@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-24.jpg 768w" src="/assets/images/work/{{page.folder}}/process-24.jpg" alt="Waffle Mockups" />
+</div>
+
+<div class="screenshot-container">
+	<img srcset="/assets/images/work/{{page.folder}}/process-25@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-25.jpg 768w" src="/assets/images/work/{{page.folder}}/process-25.jpg" alt="Waffle Mockups" />
+</div>
+
+<div class="screenshot-container">
+	<img srcset="/assets/images/work/{{page.folder}}/process-26@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-26.jpg 768w" src="/assets/images/work/{{page.folder}}/process-26.jpg" alt="Waffle Mockups" />
+</div>
+
+<div class="screenshot-container">
+	<img srcset="/assets/images/work/{{page.folder}}/process-27@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-27.jpg 768w" src="/assets/images/work/{{page.folder}}/process-27.jpg" alt="Waffle Mockups" />
+</div>
+
+<div class="screenshot-container">
+	<img srcset="/assets/images/work/{{page.folder}}/process-28@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-28.jpg 768w" src="/assets/images/work/{{page.folder}}/process-28.jpg" alt="Waffle Mockups" />
+</div>
+
+<div class="screenshot-container">
+	<img srcset="/assets/images/work/{{page.folder}}/process-29@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-29.jpg 768w" src="/assets/images/work/{{page.folder}}/process-29.jpg" alt="Waffle Mockups" />
 </div>

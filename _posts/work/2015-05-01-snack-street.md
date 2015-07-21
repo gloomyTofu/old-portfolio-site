@@ -201,5 +201,5 @@ Observations: Navigation was fairly straightforward. Users knew when to swipe wi
 	<img srcset="/assets/images/work/{{page.folder}}/process-18@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-18.jpg 768w" src="/assets/images/work/{{page.folder}}/process-18.jpg" alt="User Testing Results" />
 </div>
 
-Conclusions: Issues with back button had to be removed and replaced with global menu. Keywords on dish screen were restyled to look less like buttons. Fixed inconsistencies with wording e.g. "liked" and "loved", all were replaced with "loved." Reworded translation card so it's clear what each tab represents.
+Modifications: Issues with back button had to be removed and replaced with global menu. Keywords on dish screen were restyled to look less like buttons. Fixed inconsistencies with wording e.g. "liked" and "loved", all were replaced with "loved." Reworded translation card so it's clear what each tab represents.
 
