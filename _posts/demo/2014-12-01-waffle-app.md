@@ -10,7 +10,7 @@ github:
  title: View on GitHub
  url: https://github.com/gloomyTofu/waffle
 category: demo
-project: 'http://cariephon.com/wafflestyle/'
+project: 'http://cariephon.com/wafflestyle/#2'
 
 ---
 
