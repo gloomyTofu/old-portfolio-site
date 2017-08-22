@@ -1,7 +1,7 @@
 ---
 layout: article
 title: 'Snack Street'
-class: 'tile1 medium-tile'
+class: 'tile4 small-tile'
 folder: 'snack-street'
 excerpt: 'Concept Mobile App'
 description: 'Thesis Project: Travel Food App'

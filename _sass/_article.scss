@@ -66,13 +66,21 @@ $header-image-height: 500px;
 		p, ul, ol {
 			@include margin($space-small 0 $space-small 0);
 		}
-		h2 {
+		h2:not(:first-child) {
 			margin-top: $space; 
 		}
 	}
 	.two-col-secondary {
 		@include media($desktop) {
 			@include span-columns(3);
+		}
+	}
+
+	a.inline-link {
+		color: $primary-color-dark; 
+
+		&:hover, &:focus {
+			text-decoration: none; 
 		}
 	}
 }

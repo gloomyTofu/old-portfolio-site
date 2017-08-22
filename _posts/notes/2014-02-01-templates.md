@@ -5,7 +5,7 @@ class: 'tile5 small-tile'
 folder: 'cdk-templates'
 excerpt: 'Optimized Workflow'
 description: 'Optimized Workflow'
-category: work
+category: notes
 background: e8e8e8
 image:
  full: full-image.jpg

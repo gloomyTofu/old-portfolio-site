@@ -1,7 +1,7 @@
 ---
 layout: article
 title: 'Waffle Style'
-class: 'tile2 medium-tile'
+class: 'tile5 small-tile'
 folder: 'waffle-app'
 excerpt: 'Concept iPad App'
 description: 'Concept HTML5 iPad Game'

@@ -85,7 +85,7 @@ figure {
 				img {
 					@include media($desktop) {
 						width: auto;
-						height: rem(200);
+						height: rem(216);
 					}
 				}
 			}
@@ -97,8 +97,9 @@ figure {
 			}
 		}
 		&.tile4 {
+			@include omega();
 			@include media($tablet) {
-				@include omega();
+				
 			}
 			&.small-tile {
 				@include media($desktop) {
@@ -110,6 +111,9 @@ figure {
 		&.tile {
 			border: $cp-border-2;
 			background-color: $background-color-grey;
+		}
+		&.tile5 {
+			margin-right: 0; 	
 		}
 	}
 }

@@ -37,9 +37,9 @@ skills:
 - {name: PHOTOSHOP, value: '4'}
 - {name: ILLUSTRATOR, value: '4'}
 - {name: SASS, value: '3'}
+- {name: JAVASCRIPT, value: '3'}
+- {name: ANGULAR, value: '3'}
 - {name: JQUERY, value: '2'}
-- {name: ANGULAR, value: '2'}
-- {name: JAVASCRIPT, value: '2'}
 
 
 # Resume
