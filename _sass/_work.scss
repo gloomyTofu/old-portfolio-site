@@ -3,12 +3,12 @@ figure {
 }
 
 .article-wrap {
-	position: relative; 
+	position: relative;
 	.overlay {
 		color:#fff;
-		background-color:transparentize($grey-color-dark,0.1); 
+		background-color:transparentize($grey-color-dark,0.1);
 		width: 100%;
-		height: 100%; 
+		height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -21,23 +21,23 @@ figure {
 			text-transform: uppercase;
 			border-bottom: 1px solid #fff;
 			vertical-align: middle;
-			padding-bottom: rem(5); 
+			padding-bottom: rem(5);
 			font-size: rem(30);
 			font-weight: 400;
 		}
 		p {
 			@extend %margin-padding-reset;
-			padding-top: rem(10); 
+			padding-top: rem(10);
 		}
 		i.icon {
 			&.check-icon {
-				display:none; 
+				display:none;
 				svg {
-					fill: none; 
+					fill: none;
 					stroke: #fff;
 					width: rem(25);
 					height: rem(25);
-					display: inline; 
+					display: inline;
 				}
 			}
 		}
@@ -58,23 +58,23 @@ figure {
 				}
 			}
 		}
-		
+
 	}
 }
 
-.article-tiles { 
+.article-tiles {
 	article {
 		margin-bottom: $space-small;
 		.article-wrap {
 			overflow:hidden;
 			figure {
-				background-color: #e8e8e8; 
+				background-color: #e8e8e8;
 			}
 			img {
-				width:100%; 
+				width:100%;
 			}
 		}
-		
+
 		&.medium-tile {
 			@include media($tablet-plus) {
 				@include span-columns(4 of 8);
@@ -98,22 +98,34 @@ figure {
 		}
 		&.tile4 {
 			@include omega();
-			@include media($tablet) {
-				
-			}
+
 			&.small-tile {
 				@include media($desktop) {
 					@include span-columns(4 of 10);
 				}
 			}
 		}
+		&.tile5 {
+			@include media($desktop) {
+				@include omega();
+			}
+		}
 		&.tile2 { @include omega(); }
+		&.tile6 {
+			@include media($tablet) {
+				@include omega();
+			}
+		}
+		&.tile7 {
+			&.small-tile {
+				@include media($desktop) {
+					@include span-columns(4 of 10);
+				}
+			}
+		}
 		&.tile {
 			border: $cp-border-2;
 			background-color: $background-color-grey;
-		}
-		&.tile5 {
-			margin-right: 0; 	
 		}
 	}
 }
@@ -128,12 +140,11 @@ figure {
 
 .project-details {
 	@extend %transition;
-	float:left; 
+	float:left;
 	display: none;
 	@include fill-parent;
 }
 
 .project-list {
-	clear: both; 
+	clear: both;
 }
-	

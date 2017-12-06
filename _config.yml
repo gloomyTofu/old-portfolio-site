@@ -5,27 +5,28 @@ description: >
   Hi, my name is Carie Phon. I'm a designer and developer who loves breaking down complex ideas and turning them into simple yet sophisticated websites and apps that are charming, intuitive, and super fun to use.
 
 # the subpath of your site, e.g. /blog/
-baseurl: "" 
+baseurl: ""
 
 # the base hostname & protocol for your site
-url: "http://cariephon.com" 
+url: "http://cariephon.com"
 
 #twitter_username: cariephon
 github_username: gloomyTofu
 
 gems:
   - jemoji
-  
+  - jekyll-paginate
+
+
 sass:
     style: :compressed
-  
+
 # Build settings
 # Use rdiscount as the markdown engine because it generates html5 compliant code for stuff like footnotes
-markdown: rdiscount
+#markdown: redcarpet
 
 # Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
 permalink: pretty
 
 # How many articles do you wish to appear on the front page:
 paginate: 3
-

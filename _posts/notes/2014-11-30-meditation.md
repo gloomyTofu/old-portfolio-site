@@ -1,34 +1,34 @@
 ---
 layout: article
 title: 'Mindfulness'
-class: 'tile3 small-tile'
+class: 'tile6 small-tile'
 folder: 'meditation'
 excerpt: 'jQuery Mobile App'
 description: 'Concept Meditation App'
-category: notes
+category: work
 background: e8e8e8
 image:
  full: full-image.jpg
  preview: preview.jpg
  thumb: thumb.jpg
-launch: 
+launch:
  title: Launch
  url: '/demo/2014/11/30/meditation/'
-mobile: 
+mobile:
  title: Launch
  url: 'http://cariephon.com/aau/wnm617/mindfulness/'
-github: 
+github:
  title: View on GitHub
  url: https://github.com/gloomyTofu/mindfulness
 info:
  title: Technology
- group: 
+ group:
   title: jQuery Mobile App
   description: HTML, CSS, JavaScript
- group2: 
+ group2:
   title: Tools
   description: Illustrator, Photoshop, Brackets
- group3: 
+ group3:
   title: Role
   description: 'User Research, UI/UX Design, User Testing, Front-End Development'
 
@@ -36,7 +36,7 @@ info:
 
 ## MINDFULNESS APP
 
-Final project for my Mobile Web Technology course. Using the jQuery Mobile Framework, this app has a responsive, mobile first design. The goal of the Mindfulness App is to be an accessible resource for users new to meditation and mindfulness. 
+Final project for my Mobile Web Technology course. Using the jQuery Mobile Framework, this app has a responsive, mobile first design. The goal of the Mindfulness App is to be an accessible resource for users new to meditation and mindfulness.
 
 There are a number of different exercises organized by type and by time. For example, exercises that take approximately one minute can be found under the "1 min" category while walking meditations can be found under "walking." There's also a "Tips" section for new users who need some extra help and encouragement.
 
@@ -70,7 +70,7 @@ Target audience will consist of young professionals, between 18 to 35 years old 
 
 ## PROTOTYPE
 
-Built a prototype with HTML, CSS and the jQuery Mobile Framework. 
+Built a prototype with HTML, CSS and the jQuery Mobile Framework.
 
 <div class="button-group left">
 	<a href="{{ page.launch.url }}" class="button primary-button desktop" target="_blank">
@@ -94,7 +94,7 @@ Observations: Users immediately found "1 min" exercises without any problems.
 
 Task 2 - How would you setup the timer?
 
-Observations: Users found timer by clicking "timer" but majority felt it should be a countdown clock where they can set the length of time and they'll know exactly when to end their meditation. 
+Observations: Users found timer by clicking "timer" but majority felt it should be a countdown clock where they can set the length of time and they'll know exactly when to end their meditation.
 
 Task 3 - Where would you find general information about meditation?
 
