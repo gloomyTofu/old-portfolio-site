@@ -5,7 +5,7 @@ class: 'tile6 small-tile'
 folder: 'meditation'
 excerpt: 'jQuery Mobile App'
 description: 'Concept Meditation App'
-category: work
+category: notes
 background: e8e8e8
 image:
  full: full-image.jpg
