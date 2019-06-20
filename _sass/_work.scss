@@ -1,3 +1,42 @@
+.code__container {
+  padding: 1% $space-xsmall; 
+  background: $background-color-grey;
+  color: #24292e;
+  margin: $space-small 0; 
+
+  @include media($desktop-plus) {
+	padding: 1% $space-small; 
+  }
+
+  pre {
+	font-size: 90%;
+  }
+	  
+  	.tag {
+		color: #22863a; 
+	}
+
+  	.key {
+		color: #d73a49;
+	}
+
+	.string {
+		color: #032f62; 
+	}
+
+	.type {
+		color: #005cc5; 
+	}
+
+	.function {
+		color: #6f42c1; 
+	}
+
+	.comment {
+		color: #6a737d; 
+	}
+}
+
 figure {
 	@extend %margin-padding-reset;
 }

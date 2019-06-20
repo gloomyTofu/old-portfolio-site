@@ -122,7 +122,7 @@ body {
 a {
 	color: $primary-color-dark;
 	&:hover, &:focus, &:visited {
-		color: $primary-color;
+		color: $primary-color-darkest;
 	}
 }
 

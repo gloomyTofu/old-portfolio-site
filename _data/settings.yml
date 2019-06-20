@@ -1,7 +1,7 @@
 # General Site Info
 name: Carie Phon
 job: Interaction Designer
-other-job: Front-End Developer
+other-job: User Experience Engineer
 email: hello@cariephon.com
 
 # Menu 
@@ -24,22 +24,20 @@ projects:
 
 # About Me
 bio: |	
- I'm a designer and developer with a passion for interaction design. In 2015, I graduated with a Masters in Web Design and New Media at the [Academy of Art University](http://www.academyart.edu/academics/web_design/graduate).
+ I’m an experienced UI/UX Developer with a passion for building engaging, interactive, and highly polished websites and applications. I have advanced knowledge of the UX design process, have bridged creative and engineering teams, and actively collaborates cross-department within agile environments.
  
- My experience ranges from web and print design to user interface and front-end development. I’m always advocating for the user: balancing aesthetics with technology and delight with usability.
- 
- When I’m not desiging or coding, you’ll find me exploring new places to eat, watching MasterChef, sketching, and playing with my dog Tofu.
+ When I’m not desiging or coding, you’ll find me exploring new places to eat, biking on a mountain, sketching, and playing with my dog Tofu.
 
 
 skills:
 - {name: HTML5, value: '4'}
-- {name: CSS, value: '4'}
+- {name: CSS/SCSS, value: '4'}
 - {name: PHOTOSHOP, value: '4'}
 - {name: ILLUSTRATOR, value: '4'}
-- {name: SASS, value: '3'}
+- {name: ANIMATION, value: '3'}
 - {name: JAVASCRIPT, value: '3'}
-- {name: ANGULAR, value: '3'}
-- {name: JQUERY, value: '2'}
+- {name: REACTJS, value: '2'}
+- {name: ANGULAR+, value: '2'}
 
 
 # Resume

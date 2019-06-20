@@ -22,6 +22,7 @@ $background-color: hsl(0, 0%, 100%);  // White
 $background-color-grey: #F5F5F5;			// Grey White
 $primary-color:    hsl(139,20%,81%);  // Mint
 $primary-color-dark: darken($primary-color,20%);
+$primary-color-darkest: darken($primary-color,50%);
 
 $grey-color:       hsl(31,0,60%);
 $grey-color-light: lighten($grey-color, 30%);
