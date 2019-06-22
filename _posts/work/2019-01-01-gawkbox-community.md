@@ -72,7 +72,7 @@ The GawkBox app was built in React Native and distributed to their respective ap
 -->
 
 ## AGILE
-When it comes to introducing new features for the app, GawkBox uses agile methodologies. Being such a small start-up, there isn't ever enough time to do thorough marketing research or analysis. Instead, we make incremental changes, push code often, gather feedback, check in with users, and either continue to iterate or change directions entirely.
+When it comes to introducing new features for the app, GawkBox uses agile methodologies. Being such a small start-up, there isn't ever enough time to do thorough marketing research and analysis. Instead, we make incremental changes, push code often, gather feedback, check in with users, and either continue to iterate or change directions entirely.
 
 My process varies depending on the type of work, but here's one example of incorporating a Flair System into the app:
 
@@ -101,9 +101,9 @@ High-fidelty mockups are then created. From here, based off of the comps, I woul
 	<img srcset="/assets/images/work/{{page.folder}}/process-7@2x.jpg 1089w, /assets/images/work/{{page.folder}}/process-7.jpg 768w" src="/assets/images/work/{{page.folder}}/process-7.jpg" alt="Prototypes" />
 </div>
 
-Most times, after implementing the design into code, certain aspects may need to be rethought, interactions are adjusted, and intended flows may need to change. This is my version of rapid prototyping. As I'm creating the UI components, I'll simulatenously run the latest UI library in a cloned version of our production app. 
+Most times, after implementing the design into code, certain aspects may need to be rethought, interactions are adjusted, and intended flows may need to change. This is my version of rapid prototyping: as I'm creating the UI components, I'll simulatenously run the latest UI library in a cloned version of our production app. 
 
-Here, I can build out the flow, test locally, iterate quickly, and have our internal team play around with the prototype. I'll have both Android Studio and XCode device emulators running, so I can test different operating systems as I'm building the components.   
+Within the development environment I can build out the flow, test locally, iterate quickly, and have our internal team play around with the prototype. I'll have both Android Studio and XCode device emulators running, so I can test out different device sizes and operating systems at the same time.   
 
 Once I have a good proof of concept, I'll handover my prototype to our engineers for reference and they will translate it into production code. As the engineer is working with the UI components, I'm always on hand to fix any UI issues or to answer any questions.
 
@@ -113,7 +113,7 @@ Once I have a good proof of concept, I'll handover my prototype to our engineers
 
 ASSESSMENT:
 
-After releasing the feature into the wild, we'll collect data and user feedback. For the Flair System, success would mean an increase in retention and in-app purchases. If successful, we'll iterate on the idea, enhancing the feature to be included in chat or as a reward in our leveling system. If not, we'll reprioritize and adapt to needed changes quickly.  
+After releasing the feature into the wild, we'll collect data and user feedback. For the Flair System, success would mean an increase in retention and in-app purchases. If successful, we'll iterate on the idea, enhancing the feature to be included in chat or as a reward in our leveling system. If not, we'll reprioritize and adapt to changes quickly.  
 
 
 
