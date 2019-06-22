@@ -93,6 +93,6 @@ For the website, logged-in.
 
 DESIGN SYSTEM:
 
-Next steps would be to consolidate all three UI component libraries into a single GawkBox Design System. At the moment, whenever I create a new component, I have to remember to update the README.md file for that specific library or no one will know of it. [Storybook](https://github.com/storybookjs/storybook) looks to be a good solution as it allows for UI component documentation, GUI catagorization, testing, and it supports React Native, React, and Vue. 
+Next steps would be to consolidate all three UI component libraries into a single GawkBox Design System. At the moment, whenever I create a new component, I have to remember to update the README.md file for that specific library or no one will know of it. [Storybook](https://github.com/storybookjs/storybook) looks to be a good solution as it allows for UI component documentation, GUI categorization, testing, and it supports React Native, React, and Vue. 
 
 
